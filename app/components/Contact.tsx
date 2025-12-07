@@ -10,6 +10,14 @@ interface FormData {
   message: string
 }
 
+interface FormErrors {
+  name?: string
+  email?: string
+  phone?: string
+  services?: string
+  message?: string
+}
+
 export default function Contact() {
   const [formData, setFormData] = useState<FormData>({
     name: '',
@@ -18,7 +26,7 @@ export default function Contact() {
     services: [],
     message: '',
   })
-  const [errors, setErrors] = useState<Partial<FormData & { services: string }>>({})
+  const [errors, setErrors] = useState<FormErrors>({})
   const [isSubmitted, setIsSubmitted] = useState(false)
 
   const serviceOptions = [
@@ -31,7 +39,7 @@ export default function Contact() {
   ]
 
   const validateForm = (): boolean => {
-    const newErrors: Partial<FormData & { services: string }> = {}
+    const newErrors: FormErrors = {}
 
     if (!formData.name.trim()) {
       newErrors.name = 'Name is required'
