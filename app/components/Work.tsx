@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import SectionHeader from './SectionHeader'
 
 interface Project {
   category: string
@@ -52,38 +53,35 @@ export default function Work() {
   return (
     <section id="work" className="section-padding bg-backgroundWarm">
       <div className="container-editorial">
-        <div className="max-w-2xl mb-16">
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-textMain mb-6">
-            A few ways we've helped clients
-          </h2>
-          <p className="text-lg text-brandGray leading-relaxed">
-            Real projects that combined multiple services under one team.
-          </p>
-        </div>
+        <SectionHeader
+          label="PROJECTS"
+          title="A few ways we've helped clients"
+          description="Real projects that combined multiple services under one team."
+        />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group relative h-80 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
+              className="group relative h-80 rounded-lg overflow-hidden border border-brandGray/10 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"
             >
               {/* Background Image */}
               <Image
                 src={project.imageUrl}
                 alt={project.title}
                 fill
-                className="object-cover group-hover:scale-110 transition-transform duration-500"
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
               
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-textMain/90 via-textMain/50 to-transparent"></div>
+              {/* Subtle dark gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-textMain/85 via-textMain/40 to-transparent"></div>
               
-              {/* Content */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <span className="inline-block px-3 py-1 bg-brandOrange text-white text-xs font-semibold rounded-full mb-3">
+              {/* Content - bottom left */}
+              <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
+                <span className="inline-block px-3 py-1 bg-brandOrange text-white text-xs font-semibold rounded-full mb-2 border border-brandOrange/20">
                   {project.category}
                 </span>
-                <h3 className="font-serif text-xl font-semibold mb-2">
+                <h3 className="font-serif text-lg font-semibold mb-1.5">
                   {project.title}
                 </h3>
                 <p className="text-sm text-white/90 leading-relaxed">
@@ -97,4 +95,3 @@ export default function Work() {
     </section>
   )
 }
-

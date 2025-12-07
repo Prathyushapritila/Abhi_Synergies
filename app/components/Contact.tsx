@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, FormEvent } from 'react'
+import SectionHeader from './SectionHeader'
 
 interface FormData {
   name: string
@@ -106,26 +107,51 @@ export default function Contact() {
   return (
     <section id="contact" className="section-padding bg-surface">
       <div className="container-editorial">
-        <div className="max-w-2xl mb-16">
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-textMain mb-6">
-            Share your plan, we'll shape the rest.
-          </h2>
-        </div>
+        <SectionHeader
+          label="CONTACT"
+          title="Share your plan, we'll shape the rest."
+        />
 
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
           {/* Left Column - Contact Info */}
           <div>
+            <div className="mb-6">
+              <h3 className="font-serif text-xl font-semibold text-textMain mb-2">Abhi Synergies</h3>
+              <p className="text-sm text-brandGray mb-1">Rise Together</p>
+            </div>
+            
             <p className="text-lg text-brandGray mb-8 leading-relaxed">
               Tell us about your project – whether it's construction, an event, digital work, or a combination. We'll get back to you within 1–2 working days.
             </p>
-            <div className="space-y-6">
+            
+            <div className="space-y-6 mb-8">
               <div>
                 <p className="font-semibold text-textMain mb-1">Phone</p>
-                <p className="text-brandGray">+1 (555) 123-4567</p>
+                <a 
+                  href="tel:+919666155296" 
+                  className="text-brandGray hover:text-brandOrange transition-colors"
+                >
+                  +91 96661 55296
+                </a>
               </div>
               <div>
                 <p className="font-semibold text-textMain mb-1">Email</p>
-                <p className="text-brandGray">info@abhieliteservices.com</p>
+                <a 
+                  href="mailto:abhignainnovations@gmail.com" 
+                  className="text-brandGray hover:text-brandOrange transition-colors"
+                >
+                  abhignainnovations@gmail.com
+                </a>
+              </div>
+              <div>
+                <p className="font-semibold text-textMain mb-2">Address</p>
+                <div className="text-brandGray text-sm leading-relaxed">
+                  <p>Block: AG8</p>
+                  <p>Mathrus Apartment</p>
+                  <p>Opp: Zudio showroom Hyderguda Basheerbagh Road</p>
+                  <p>Hyderguda</p>
+                  <p>Hyderabad, Telangana 500029</p>
+                </div>
               </div>
               <div>
                 <p className="font-semibold text-textMain mb-1">Response time</p>
@@ -153,7 +179,7 @@ export default function Contact() {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brandOrange ${
+                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brandOrange transition-all ${
                       errors.name ? 'border-red-500' : 'border-brandGray/30'
                     }`}
                   />
@@ -170,7 +196,7 @@ export default function Contact() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brandOrange ${
+                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brandOrange transition-all ${
                       errors.email ? 'border-red-500' : 'border-brandGray/30'
                     }`}
                   />
@@ -187,7 +213,7 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brandOrange ${
+                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brandOrange transition-all ${
                       errors.phone ? 'border-red-500' : 'border-brandGray/30'
                     }`}
                   />
@@ -202,7 +228,7 @@ export default function Contact() {
                     {serviceOptions.map((option) => (
                       <label
                         key={option}
-                        className="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-backgroundWarm"
+                        className="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-backgroundWarm transition-colors"
                       >
                         <input
                           type="checkbox"
@@ -227,7 +253,7 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     rows={5}
-                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brandOrange ${
+                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-brandOrange transition-all ${
                       errors.message ? 'border-red-500' : 'border-brandGray/30'
                     }`}
                   ></textarea>
@@ -236,13 +262,13 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="w-full px-8 py-4 bg-brandOrange text-white font-semibold rounded-lg shadow-md hover:bg-opacity-90 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-brandOrange focus:ring-offset-2"
+                  className="w-full px-8 py-4 bg-brandOrange text-white font-semibold rounded-lg shadow-md hover:bg-opacity-90 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-brandOrange focus:ring-offset-2"
                 >
                   Send Message
                 </button>
                 
                 <p className="text-xs text-brandGray text-center">
-                  We'll use this information to respond to your enquiry.
+                  We reply in 1–2 working days, usually sooner.
                 </p>
               </form>
             )}

@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import SectionHeader from './SectionHeader'
 
 interface Service {
   id: string
@@ -52,44 +53,45 @@ export default function Services() {
   return (
     <section id="services" className="section-padding bg-surface">
       <div className="container-editorial">
-        {/* Intro */}
-        <div className="max-w-2xl mb-16">
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-textMain mb-6">
-            Services under Abhi Elite
-          </h2>
-          <p className="text-lg text-brandGray leading-relaxed">
-            One company covering multiple verticals. Instead of coordinating with separate teams for construction, events, digital work and catering, you work with one trusted partner who understands how these pieces fit together.
-          </p>
-        </div>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          {/* Left Column - Intro Text */}
+          <div>
+            <SectionHeader
+              label="SERVICES"
+              title="Services under Abhi Synergies"
+              description="One company covering multiple verticals. Instead of coordinating with separate teams for construction, events, digital work and catering, you work with one trusted partner who understands how these pieces fit together."
+            />
+          </div>
 
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          {services.map((service) => (
-            <div
-              key={service.id}
-              className="group flex gap-6 p-6 rounded-lg border border-brandGray/10 hover:border-brandOrange/30 hover:shadow-lg transition-all duration-300 bg-surface"
-            >
-              {/* Image Thumbnail */}
-              <div className="relative w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden">
-                <Image
-                  src={service.imageUrl}
-                  alt={service.title}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-300"
-                />
+          {/* Right Column - Services Grid */}
+          <div className="grid grid-cols-1 gap-6">
+            {services.map((service) => (
+              <div
+                key={service.id}
+                className="group flex gap-4 p-5 rounded-lg border border-brandGray/10 hover:border-brandOrange/40 hover:shadow-md transition-all duration-300 bg-surface hover:-translate-y-1"
+              >
+                {/* Image Thumbnail with border */}
+                <div className="relative w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden border border-brandGray/10">
+                  <Image
+                    src={service.imageUrl}
+                    alt={service.title}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+                
+                {/* Content */}
+                <div className="flex-1">
+                  <h3 className="font-serif text-lg font-semibold text-textMain mb-1.5">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm text-brandGray leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
               </div>
-              
-              {/* Content */}
-              <div className="flex-1">
-                <h3 className="font-serif text-xl font-semibold text-textMain mb-2">
-                  {service.title}
-                </h3>
-                <p className="text-brandGray leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

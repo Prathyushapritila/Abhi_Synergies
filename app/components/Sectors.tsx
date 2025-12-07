@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import SectionHeader from './SectionHeader'
 
 interface Sector {
   title: string
@@ -32,31 +33,32 @@ const sectors: Sector[] = [
 
 export default function Sectors() {
   return (
-    <section id="sectors" className="section-padding bg-backgroundWarm">
-      <div className="container-editorial">
-        <div className="max-w-2xl mb-16">
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-textMain mb-6">
-            Where our services fit best
-          </h2>
-          <p className="text-lg text-brandGray leading-relaxed">
-            Real projects usually need more than one service. Here's how we combine our offerings for common scenarios.
-          </p>
-        </div>
+    <section id="sectors" className="section-padding bg-backgroundWarm relative">
+      {/* Subtle corner accent */}
+      <div className="absolute top-12 right-12 w-32 h-32 border-l border-t border-brandGray/10 rounded-tl-sm hidden lg:block"></div>
+      
+      <div className="container-editorial relative">
+        <SectionHeader
+          label="SECTORS"
+          title="Where our services fit best"
+          description="Real projects usually need more than one service. Here's how we combine our offerings for common scenarios."
+        />
 
         <div className="space-y-8">
           {sectors.map((sector, index) => (
             <div
               key={index}
-              className="grid md:grid-cols-2 gap-8 items-center bg-surface rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
+              className="grid md:grid-cols-2 gap-0 items-center bg-surface rounded-lg overflow-hidden border border-brandGray/10 shadow-sm hover:shadow-md transition-shadow duration-300"
             >
-              {/* Image */}
-              <div className={`relative h-64 md:h-full ${index % 2 === 0 ? 'md:order-1' : 'md:order-2'}`}>
+              {/* Image with border */}
+              <div className={`relative h-64 md:h-80 ${index % 2 === 0 ? 'md:order-1' : 'md:order-2'}`}>
                 <Image
                   src={sector.imageUrl}
                   alt={sector.title}
                   fill
                   className="object-cover"
                 />
+                <div className="absolute inset-0 border-r border-brandGray/10"></div>
               </div>
               
               {/* Content */}
@@ -71,7 +73,7 @@ export default function Sectors() {
                   {sector.services.map((service, i) => (
                     <span
                       key={i}
-                      className="inline-block px-4 py-2 bg-brandOrange/10 text-brandOrange text-sm font-medium rounded-full"
+                      className="inline-block px-4 py-2 bg-brandOrange/10 text-brandOrange text-sm font-medium rounded-full border border-brandOrange/20"
                     >
                       {service}
                     </span>
@@ -85,4 +87,3 @@ export default function Sectors() {
     </section>
   )
 }
-

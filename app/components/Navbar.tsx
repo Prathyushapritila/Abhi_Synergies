@@ -46,21 +46,25 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 bg-backgroundWarm/95 backdrop-blur-sm border-b border-brandGray/10">
       <div className="container-editorial">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
+          {/* Logo and Brand */}
           <Link 
             href="#home" 
-            className="flex items-center"
+            className="flex items-center gap-3"
             onClick={() => handleNavClick('home')}
-            aria-label="Abhi Elite Services Home"
+            aria-label="Abhi Synergies Home"
           >
             <div className="relative w-16 h-16">
               <Image
                 src="/abhi-logo.png"
-                alt="Abhi Elite Services"
+                alt="Abhi Synergies"
                 fill
                 className="object-contain"
                 priority
               />
+            </div>
+            <div className="hidden md:block">
+              <div className="font-serif text-lg font-semibold text-textMain">Abhi Synergies</div>
+              <div className="text-xs text-brandGray tracking-wide">Rise Together</div>
             </div>
           </Link>
 

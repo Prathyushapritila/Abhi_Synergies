@@ -15,8 +15,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Abhi Elite Services - One team for many needs',
-  description: 'Construction, events, digital and F&B under one trusted team. Real projects, one point of contact.',
+  title: 'Abhi Synergies - Rise Together',
+  description: 'Abhi Synergies brings construction, consultancy, digital, events, entertainment and F&B under one team, so clients and partners rise together.',
 }
 
 export default function RootLayout({
