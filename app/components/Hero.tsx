@@ -21,17 +21,10 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left Side - Content */}
           <div className="space-y-8">
-            <div className="text-xs uppercase tracking-wider text-brandGray font-medium">
-              ABHI SYNERGIES
-            </div>
-            
             <div>
               <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-textMain leading-tight tracking-tight mb-3">
                 Abhi Synergies brings construction, consultancy, digital, events, entertainment and F&B under one team.
               </h1>
-              <div className="inline-block px-4 py-1.5 bg-brandOrange/10 text-brandOrange text-sm font-semibold rounded-full border border-brandOrange/20 mb-4">
-                Rise Together
-              </div>
             </div>
             
             <div className="space-y-4 text-lg text-brandGray leading-relaxed max-w-xl">

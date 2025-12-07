@@ -121,7 +121,7 @@ export default function Contact() {
             </div>
             
             <p className="text-lg text-brandGray mb-8 leading-relaxed">
-              Tell us about your project – whether it's construction, an event, digital work, or a combination. We'll get back to you within 1–2 working days.
+              Tell us about your project – whether it's construction, an event, digital work, or a combination.
             </p>
             
             <div className="space-y-6 mb-8">
@@ -153,10 +153,6 @@ export default function Contact() {
                   <p>Hyderabad, Telangana 500029</p>
                 </div>
               </div>
-              <div>
-                <p className="font-semibold text-textMain mb-1">Response time</p>
-                <p className="text-brandGray">We typically respond within 1–2 working days.</p>
-              </div>
             </div>
           </div>
 
@@ -165,7 +161,7 @@ export default function Contact() {
             {isSubmitted ? (
               <div className="bg-brandOrange/10 border border-brandOrange/30 rounded-lg p-6 text-center">
                 <p className="text-brandOrange font-semibold text-lg mb-2">✓ Thank you for your message!</p>
-                <p className="text-brandGray">We'll get back to you within 1–2 working days.</p>
+                <p className="text-brandGray">We'll get back to you soon.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -266,10 +262,6 @@ export default function Contact() {
                 >
                   Send Message
                 </button>
-                
-                <p className="text-xs text-brandGray text-center">
-                  We reply in 1–2 working days, usually sooner.
-                </p>
               </form>
             )}
           </div>

@@ -14,6 +14,8 @@ const config: Config = {
         backgroundWarm: '#F9F7F3',
         surface: '#FFFFFF',
         textMain: '#191919',
+        brandBlue: '#083B66',
+        brandYellow: '#F3D94B',
       },
       fontFamily: {
         serif: ['var(--font-serif)'],

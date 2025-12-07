@@ -56,13 +56,10 @@ export default function About() {
             {/* Founder Card */}
             <div className="bg-backgroundWarm border border-brandGray/20 rounded-lg p-6 shadow-sm">
               <div className="flex items-start gap-4">
-                <div className="relative w-12 h-12 flex-shrink-0">
-                  <Image
-                    src="/abhi-logo.png"
-                    alt="Abhi Synergies"
-                    fill
-                    className="object-contain"
-                  />
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 flex items-center justify-center bg-brandOrange/10 rounded-lg">
+                    <span className="text-brandOrange font-serif text-xl font-bold">A</span>
+                  </div>
                 </div>
                 <div className="flex-1">
                   <div className="text-xs uppercase tracking-wide text-brandGray mb-1">Founder</div>

@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -43,28 +42,21 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="sticky top-0 z-50 bg-backgroundWarm/95 backdrop-blur-sm border-b border-brandGray/10">
+    <nav className="sticky top-0 z-50 bg-brandBlue shadow-lg">
       <div className="container-editorial">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo and Brand */}
+        <div className="flex items-center justify-between h-24 md:h-28">
+          {/* Unified Logo */}
           <Link 
             href="#home" 
-            className="flex items-center gap-3"
+            className="flex flex-col items-start"
             onClick={() => handleNavClick('home')}
             aria-label="Abhi Synergies Home"
           >
-            <div className="relative w-16 h-16">
-              <Image
-                src="/abhi-logo.png"
-                alt="Abhi Synergies"
-                fill
-                className="object-contain"
-                priority
-              />
+            <div className="font-serif text-2xl md:text-3xl lg:text-4xl font-bold text-brandOrange leading-tight">
+              ABHI SYNERGIES
             </div>
-            <div className="hidden md:block">
-              <div className="font-serif text-lg font-semibold text-textMain">Abhi Synergies</div>
-              <div className="text-xs text-brandGray tracking-wide">Rise Together</div>
+            <div className="text-sm md:text-base font-medium text-brandYellow mt-0.5">
+              Rise Together
             </div>
           </Link>
 
@@ -75,10 +67,10 @@ export default function Navbar() {
                 key={link.id}
                 href={link.href}
                 onClick={() => handleNavClick(link.id)}
-                className={`relative text-sm font-medium tracking-wide transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-brandOrange focus:ring-offset-2 rounded px-2 py-1 ${
+                className={`relative text-sm font-medium tracking-wide transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-brandOrange focus:ring-offset-2 focus:ring-offset-brandBlue rounded px-2 py-1 ${
                   activeSection === link.id
                     ? 'text-brandOrange'
-                    : 'text-brandGray hover:text-brandOrange'
+                    : 'text-white hover:text-brandOrange'
                 }`}
               >
                 {link.name}
@@ -92,7 +84,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-md text-brandGray hover:text-brandOrange focus:outline-none focus:ring-2 focus:ring-brandOrange focus:ring-offset-2"
+            className="md:hidden p-2 rounded-md text-white hover:text-brandOrange focus:outline-none focus:ring-2 focus:ring-brandOrange focus:ring-offset-2 focus:ring-offset-brandBlue"
             aria-label="Toggle navigation menu"
             aria-expanded={isOpen}
           >
@@ -116,7 +108,7 @@ export default function Navbar() {
 
         {/* Mobile Navigation Menu */}
         {isOpen && (
-          <div className="md:hidden pb-6 border-t border-brandGray/10 mt-2">
+          <div className="md:hidden pb-6 border-t border-white/20 mt-2">
             <div className="flex flex-col space-y-2 pt-4">
               {navLinks.map((link) => (
                 <Link
@@ -126,7 +118,7 @@ export default function Navbar() {
                   className={`px-4 py-3 rounded-md text-base font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-brandOrange focus:ring-offset-2 ${
                     activeSection === link.id
                       ? 'text-brandOrange bg-brandOrange/10'
-                      : 'text-brandGray hover:text-brandOrange hover:bg-brandGray/5'
+                      : 'text-white hover:text-brandOrange hover:bg-white/10'
                   }`}
                 >
                   {link.name}

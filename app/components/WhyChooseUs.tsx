@@ -33,7 +33,7 @@ export default function WhyChooseUs() {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-textMain mb-4">
-            Why Choose Abhi Elite
+            Why Choose Abhi Synergies
           </h2>
           <div className="w-24 h-1 bg-brandOrange mx-auto mb-6"></div>
           <p className="text-lg text-brandGray max-w-3xl mx-auto">

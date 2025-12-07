@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -7,20 +6,14 @@ export default function Footer() {
       <div className="container-editorial">
         {/* Top Section: Logo, Brand, and Social */}
         <div className="grid md:grid-cols-3 gap-8 mb-8 pb-8 border-b border-white/10">
-          {/* Logo and Brand */}
+          {/* Unified Logo and Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-3">
-              <div className="relative w-12 h-12">
-                <Image
-                  src="/abhi-logo.png"
-                  alt="Abhi Synergies"
-                  fill
-                  className="object-contain"
-                />
+            <div className="mb-4">
+              <div className="font-serif text-2xl md:text-3xl font-bold text-brandOrange leading-tight mb-1">
+                ABHI SYNERGIES
               </div>
-              <div>
-                <div className="font-serif text-lg font-semibold">Abhi Synergies</div>
-                <div className="text-xs text-white/70">Rise Together</div>
+              <div className="text-sm md:text-base font-medium text-brandYellow">
+                Rise Together
               </div>
             </div>
             <p className="text-sm text-white/70 mt-4">
