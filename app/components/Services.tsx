@@ -15,37 +15,37 @@ const services: Service[] = [
     id: 'constructions',
     title: 'Constructions & Innovations',
     description: 'We support you with building, interiors and basic setup for homes, apartments, offices and shops.',
-    imageUrl: '/images/construction-service.svg',
+    imageUrl: '/images/service-construction.svg',
   },
   {
     id: 'consultancy',
     title: 'Consultancy Services',
     description: 'We help you plan the project, understand approvals, estimate costs and select the right vendors.',
-    imageUrl: '/images/interior-service.svg',
+    imageUrl: '/images/service-consultancy.svg',
   },
   {
     id: 'digital',
     title: 'Digital Services',
     description: 'We create simple, clean branding and online presence – logos, posts or basic websites – so people can find your project or business.',
-    imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80',
+    imageUrl: '/images/service-digital.svg',
   },
   {
     id: 'events',
     title: 'Event Management',
     description: 'We plan and run events such as launches, family functions and office gatherings – from stage and sound to timing and flow.',
-    imageUrl: '/images/event-service.svg',
+    imageUrl: '/images/service-events.svg',
   },
   {
     id: 'entertainment',
     title: 'Entertainments',
     description: 'We arrange artists, cultural programs, DJs or anchors to match the mood of your event.',
-    imageUrl: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&q=80',
+    imageUrl: '/images/service-entertainment.svg',
   },
   {
     id: 'fnb',
     title: 'F&B Services',
     description: 'We set up food counters or buffets with clean service and simple menus that guests enjoy.',
-    imageUrl: '/images/food-service.svg',
+    imageUrl: '/images/service-fnb.svg',
   },
 ]
 

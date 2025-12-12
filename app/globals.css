@@ -9,7 +9,7 @@
   
   body {
     @apply text-ink;
-    background-image: url('/images/website-bg.svg');
+    background-image: url('/images/website-bg-new.svg');
     background-size: cover;
     background-position: center top;
     background-attachment: scroll;

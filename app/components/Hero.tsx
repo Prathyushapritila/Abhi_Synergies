@@ -46,14 +46,14 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Side - Image */}
+          {/* Right Side - Illustration */}
           <div className="relative hidden md:block">
-            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative w-full aspect-[3/2] rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-lg">
               <Image
-                src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&q=80"
-                alt="Indian construction and celebration"
+                src="/images/hero-illustration.svg"
+                alt="Multiple services: construction, events, digital, F&B, and consultancy"
                 fill
-                className="object-cover"
+                className="object-contain p-8"
                 priority
               />
             </div>

@@ -16,12 +16,12 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Side - Image */}
           <div className="relative">
-            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-slate-200 shadow-lg">
+            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-lg">
               <Image
-                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&q=80"
-                alt="Team collaboration"
+                src="/images/about-illustration.svg"
+                alt="Team collaboration and coordination"
                 fill
-                className="object-cover"
+                className="object-contain p-8"
               />
             </div>
           </div>
