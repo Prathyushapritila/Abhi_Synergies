@@ -15,37 +15,37 @@ const services: Service[] = [
     id: 'constructions',
     title: 'Constructions & Innovations',
     description: 'We support you with building, interiors and basic setup for homes, apartments, offices and shops.',
-    imageUrl: '/images/service-construction.svg',
+    imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80',
   },
   {
     id: 'consultancy',
     title: 'Consultancy Services',
     description: 'We help you plan the project, understand approvals, estimate costs and select the right vendors.',
-    imageUrl: '/images/service-consultancy.svg',
+    imageUrl: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80',
   },
   {
     id: 'digital',
     title: 'Digital Services',
     description: 'We create simple, clean branding and online presence – logos, posts or basic websites – so people can find your project or business.',
-    imageUrl: '/images/service-digital.svg',
+    imageUrl: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80',
   },
   {
     id: 'events',
     title: 'Event Management',
     description: 'We plan and run events such as launches, family functions and office gatherings – from stage and sound to timing and flow.',
-    imageUrl: '/images/service-events.svg',
+    imageUrl: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80',
   },
   {
     id: 'entertainment',
     title: 'Entertainments',
     description: 'We arrange artists, cultural programs, DJs or anchors to match the mood of your event.',
-    imageUrl: '/images/service-entertainment.svg',
+    imageUrl: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80',
   },
   {
     id: 'fnb',
     title: 'F&B Services',
     description: 'We set up food counters or buffets with clean service and simple menus that guests enjoy.',
-    imageUrl: '/images/service-fnb.svg',
+    imageUrl: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80',
   },
 ]
 
@@ -71,12 +71,12 @@ export default function Services() {
                 className="group flex gap-4 p-5 rounded-2xl bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-200"
               >
                 {/* Image Thumbnail */}
-                <div className="relative w-20 h-20 flex-shrink-0 rounded-xl overflow-hidden shadow-md bg-white">
+                <div className="relative w-20 h-20 flex-shrink-0 rounded-xl overflow-hidden shadow-md">
                   <Image
                     src={service.imageUrl}
                     alt={service.title}
                     fill
-                    className={service.imageUrl.endsWith('.svg') ? 'object-contain p-2 group-hover:scale-105 transition-transform duration-300' : 'object-cover group-hover:scale-105 transition-transform duration-300'}
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 

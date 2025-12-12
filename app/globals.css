@@ -9,19 +9,8 @@
   
   body {
     @apply text-ink;
-    background-image: url('/images/website-bg-new.svg');
-    background-size: cover;
-    background-position: center top;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
+    background-color: #F8F9FA;
     min-height: 100vh;
-  }
-  
-  /* For larger screens, use fixed attachment for parallax effect */
-  @media (min-width: 1024px) {
-    body {
-      background-attachment: fixed;
-    }
   }
   
   h1, h2, h3, h4, h5, h6 {

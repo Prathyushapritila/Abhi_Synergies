@@ -16,13 +16,15 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Side - Image */}
           <div className="relative">
-            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-white border border-slate-200 shadow-lg">
+            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/images/about-illustration.svg"
-                alt="Team collaboration and coordination"
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80"
+                alt="Modern teamwork and business collaboration"
                 fill
-                className="object-contain p-8"
+                className="object-cover"
               />
+              {/* Subtle overlay for depth */}
+              <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-slate-900/10"></div>
             </div>
           </div>
 
