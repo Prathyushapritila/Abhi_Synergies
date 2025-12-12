@@ -18,7 +18,7 @@ export default function About() {
           <div className="relative">
             <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80"
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=90"
                 alt="Modern teamwork and business collaboration"
                 fill
                 className="object-cover"
