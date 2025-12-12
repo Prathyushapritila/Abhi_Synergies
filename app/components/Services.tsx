@@ -15,13 +15,13 @@ const services: Service[] = [
     id: 'constructions',
     title: 'Constructions & Innovations',
     description: 'We support you with building, interiors and basic setup for homes, apartments, offices and shops.',
-    imageUrl: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=400&q=80',
+    imageUrl: '/images/construction-service.svg',
   },
   {
     id: 'consultancy',
     title: 'Consultancy Services',
     description: 'We help you plan the project, understand approvals, estimate costs and select the right vendors.',
-    imageUrl: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&q=80',
+    imageUrl: '/images/interior-service.svg',
   },
   {
     id: 'digital',
@@ -33,7 +33,7 @@ const services: Service[] = [
     id: 'events',
     title: 'Event Management',
     description: 'We plan and run events such as launches, family functions and office gatherings – from stage and sound to timing and flow.',
-    imageUrl: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=400&q=80',
+    imageUrl: '/images/event-service.svg',
   },
   {
     id: 'entertainment',
@@ -45,7 +45,7 @@ const services: Service[] = [
     id: 'fnb',
     title: 'F&B Services',
     description: 'We set up food counters or buffets with clean service and simple menus that guests enjoy.',
-    imageUrl: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80',
+    imageUrl: '/images/food-service.svg',
   },
 ]
 
@@ -71,12 +71,12 @@ export default function Services() {
                 className="group flex gap-4 p-5 rounded-2xl bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-200"
               >
                 {/* Image Thumbnail */}
-                <div className="relative w-20 h-20 flex-shrink-0 rounded-xl overflow-hidden shadow-md">
+                <div className="relative w-20 h-20 flex-shrink-0 rounded-xl overflow-hidden shadow-md bg-white">
                   <Image
                     src={service.imageUrl}
                     alt={service.title}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className={service.imageUrl.endsWith('.svg') ? 'object-contain p-2 group-hover:scale-105 transition-transform duration-300' : 'object-cover group-hover:scale-105 transition-transform duration-300'}
                   />
                 </div>
                 

@@ -11,8 +11,17 @@ export default function Hero() {
   }
 
   return (
-    <section id="home" className="relative py-16 md:py-20 bg-transparent overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4 md:px-6">
+    <section 
+      id="home" 
+      className="relative py-16 md:py-20 overflow-hidden"
+      style={{
+        backgroundImage: 'url(/images/hero-bg.svg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      <div className="max-w-6xl mx-auto px-4 md:px-6 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Side - Content */}
           <div className="space-y-6 animate-fade-in">

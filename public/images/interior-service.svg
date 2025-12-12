@@ -1,0 +1,61 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="interiorGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A7CFFF;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#C9B7FF;stop-opacity:0.4" />
+    </linearGradient>
+    <linearGradient id="interiorGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C9B7FF;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#FFB88A;stop-opacity:0.4" />
+    </linearGradient>
+    <filter id="softShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="400" cy="400" r="280" fill="url(#interiorGrad1)" opacity="0.3"/>
+  
+  <!-- Desk/workstation -->
+  <rect x="250" y="420" width="300" height="20" rx="4" fill="#C9B7FF" opacity="0.7" filter="url(#softShadow)"/>
+  <rect x="250" y="420" width="300" height="100" rx="4" fill="#A7CFFF" opacity="0.5"/>
+  
+  <!-- Desk legs -->
+  <rect x="270" y="520" width="20" height="60" rx="4" fill="#A7CFFF" opacity="0.6"/>
+  <rect x="530" y="520" width="20" height="60" rx="4" fill="#A7CFFF" opacity="0.6"/>
+  
+  <!-- Chair -->
+  <rect x="320" y="480" width="60" height="8" rx="4" fill="#FFB88A" opacity="0.7" filter="url(#softShadow)"/>
+  <rect x="330" y="488" width="40" height="50" rx="4" fill="#FFB88A" opacity="0.6"/>
+  <rect x="340" y="538" width="20" height="40" rx="4" fill="#FFB88A" opacity="0.6"/>
+  
+  <!-- Lamp -->
+  <rect x="480" y="300" width="8" height="120" rx="4" fill="#C9B7FF" opacity="0.7"/>
+  <circle cx="484" cy="300" r="25" fill="url(#interiorGrad2)" opacity="0.6" filter="url(#softShadow)"/>
+  <circle cx="484" cy="300" r="18" fill="#FFFFFF" opacity="0.4"/>
+  
+  <!-- Interior elements (shelves) -->
+  <rect x="200" y="280" width="120" height="8" rx="4" fill="#A7CFFF" opacity="0.6" filter="url(#softShadow)"/>
+  <rect x="200" y="320" width="120" height="8" rx="4" fill="#A7CFFF" opacity="0.6" filter="url(#softShadow)"/>
+  
+  <!-- Decorative items on shelf -->
+  <circle cx="240" cy="276" r="12" fill="#FFB88A" opacity="0.5"/>
+  <rect x="270" y="270" width="20" height="20" rx="4" fill="#C9B7FF" opacity="0.5"/>
+  <circle cx="240" cy="316" r="10" fill="#A7CFFF" opacity="0.5"/>
+  
+  <!-- Window/light source -->
+  <rect x="520" y="250" width="100" height="80" rx="8" fill="#FFFFFF" opacity="0.4" filter="url(#softShadow)"/>
+  <rect x="530" y="260" width="30" height="25" rx="3" fill="#A7CFFF" opacity="0.3"/>
+  <rect x="570" y="260" width="30" height="25" rx="3" fill="#A7CFFF" opacity="0.3"/>
+  <rect x="530" y="295" width="30" height="25" rx="3" fill="#A7CFFF" opacity="0.3"/>
+  <rect x="570" y="295" width="30" height="25" rx="3" fill="#A7CFFF" opacity="0.3"/>
+</svg>
+
