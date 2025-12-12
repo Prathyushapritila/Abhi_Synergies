@@ -15,37 +15,37 @@ const services: Service[] = [
     id: 'constructions',
     title: 'Constructions & Innovations',
     description: 'We support you with building, interiors and basic setup for homes, apartments, offices and shops.',
-    imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=90',
+    imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80',
   },
   {
     id: 'consultancy',
     title: 'Consultancy Services',
     description: 'We help you plan the project, understand approvals, estimate costs and select the right vendors.',
-    imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=90',
+    imageUrl: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80',
   },
   {
     id: 'digital',
     title: 'Digital Services',
     description: 'We create simple, clean branding and online presence – logos, posts or basic websites – so people can find your project or business.',
-    imageUrl: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=90',
+    imageUrl: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80',
   },
   {
     id: 'events',
     title: 'Event Management',
     description: 'We plan and run events such as launches, family functions and office gatherings – from stage and sound to timing and flow.',
-    imageUrl: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=90',
+    imageUrl: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80',
   },
   {
     id: 'entertainment',
     title: 'Entertainments',
     description: 'We arrange artists, cultural programs, DJs or anchors to match the mood of your event.',
-    imageUrl: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafcc?w=800&q=90',
+    imageUrl: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80',
   },
   {
     id: 'fnb',
     title: 'F&B Services',
     description: 'We set up food counters or buffets with clean service and simple menus that guests enjoy.',
-    imageUrl: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=90',
+    imageUrl: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80',
   },
 ]
 
