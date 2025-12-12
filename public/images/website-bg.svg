@@ -1,0 +1,104 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Base gradient -->
+    <linearGradient id="baseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8F2FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F0E8FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E8F2FF;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Soft blue blob gradient -->
+    <radialGradient id="blueBlob" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#A7CFFF;stop-opacity:0.15" />
+      <stop offset="70%" style="stop-color:#A7CFFF;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#A7CFFF;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Lavender blob gradient -->
+    <radialGradient id="lavenderBlob" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#C9B7FF;stop-opacity:0.12" />
+      <stop offset="70%" style="stop-color:#C9B7FF;stop-opacity:0.06" />
+      <stop offset="100%" style="stop-color:#C9B7FF;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Soft orange blob gradient -->
+    <radialGradient id="orangeBlob" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#FFB88A;stop-opacity:0.1" />
+      <stop offset="70%" style="stop-color:#FFB88A;stop-opacity:0.05" />
+      <stop offset="100%" style="stop-color:#FFB88A;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Wave gradient -->
+    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#A7CFFF;stop-opacity:0.08" />
+      <stop offset="50%" style="stop-color:#C9B7FF;stop-opacity:0.05" />
+      <stop offset="100%" style="stop-color:#A7CFFF;stop-opacity:0.08" />
+    </linearGradient>
+    
+    <!-- Subtle texture filter -->
+    <filter id="softTexture">
+      <feTurbulence baseFrequency="0.8" numOctaves="3" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="discrete" tableValues="0 0.01 0 0.01 0 0.01"/>
+      </feComponentTransfer>
+      <feComposite operator="over" in="SourceGraphic" in2="noise"/>
+    </filter>
+    
+    <!-- Soft blur for shapes -->
+    <filter id="softBlur">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+  </defs>
+  
+  <!-- Base background -->
+  <rect width="1920" height="1080" fill="url(#baseGradient)" filter="url(#softTexture)"/>
+  
+  <!-- Soft wave at top center -->
+  <path d="M 0 200 Q 480 150 960 200 T 1920 200 L 1920 0 L 0 0 Z" 
+        fill="url(#waveGradient)" 
+        opacity="0.6"
+        filter="url(#softBlur)"/>
+  
+  <!-- Large soft blue blob (top left area) -->
+  <ellipse cx="300" cy="250" rx="400" ry="350" 
+           fill="url(#blueBlob)" 
+           opacity="0.7"
+           filter="url(#softBlur)"/>
+  
+  <!-- Medium lavender blob (top right area) -->
+  <ellipse cx="1600" cy="300" rx="350" ry="300" 
+           fill="url(#lavenderBlob)" 
+           opacity="0.6"
+           filter="url(#softBlur)"/>
+  
+  <!-- Soft orange blob (center right) -->
+  <ellipse cx="1500" cy="600" rx="300" ry="280" 
+           fill="url(#orangeBlob)" 
+           opacity="0.5"
+           filter="url(#softBlur)"/>
+  
+  <!-- Curved blob shape (center left) -->
+  <path d="M 200 500 Q 150 400 200 300 Q 250 200 350 250 Q 400 300 350 400 Q 300 500 200 500 Z" 
+        fill="url(#lavenderBlob)" 
+        opacity="0.4"
+        filter="url(#softBlur)"/>
+  
+  <!-- Soft geometric form (bottom center) -->
+  <path d="M 800 800 Q 900 750 1000 800 Q 1100 850 1000 900 Q 900 950 800 900 Q 700 850 800 800 Z" 
+        fill="url(#blueBlob)" 
+        opacity="0.5"
+        filter="url(#softBlur)"/>
+  
+  <!-- Additional soft wave at bottom -->
+  <path d="M 0 880 Q 480 930 960 880 T 1920 880 L 1920 1080 L 0 1080 Z" 
+        fill="url(#waveGradient)" 
+        opacity="0.5"
+        filter="url(#softBlur)"/>
+  
+  <!-- Subtle layered gradient overlay for depth -->
+  <rect width="1920" height="1080" 
+        fill="url(#baseGradient)" 
+        opacity="0.3"/>
+</svg>
+
