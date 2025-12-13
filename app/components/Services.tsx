@@ -61,21 +61,16 @@ export default function Services() {
     <section 
       id="services" 
       className="py-16 md:py-20 relative overflow-hidden"
+      style={{
+        backgroundImage: 'url(/images/services-section-bg.svg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'scroll',
+      }}
     >
-      {/* Section background layer */}
-      <div 
-        className="absolute inset-0 w-full h-full"
-        style={{
-          backgroundImage: 'url(/images/services-section-bg.svg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-        }}
-        aria-hidden="true"
-      ></div>
-      
-      {/* Soft white overlay for text readability (50% opacity) */}
-      <div className="absolute inset-0 w-full h-full bg-white opacity-50" aria-hidden="true"></div>
+      {/* Soft white overlay for text readability (65% opacity) */}
+      <div className="absolute inset-0 bg-white opacity-65 pointer-events-none"></div>
       
       {/* Content layer */}
       <div className="max-w-6xl mx-auto px-4 md:px-6 relative z-10">
