@@ -18,13 +18,13 @@ export default function About() {
           <div className="relative">
             <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&q=90"
-                alt="Modern teamwork: hands collaborating over documents, charts, and laptops"
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=90"
+                alt="Modern teamwork: hands collaborating over documents, charts, and laptops on clean office desk"
                 fill
                 className="object-cover"
               />
-              {/* Subtle overlay for depth and brand consistency */}
-              <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-slate-900/5"></div>
+              {/* Minimal overlay for depth */}
+              <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-transparent"></div>
             </div>
           </div>
 

@@ -1,0 +1,45 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Soft blue-grey to off-white gradient -->
+    <linearGradient id="lightGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5F7FA;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F7F8FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F9FAFB;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Extremely gentle warm orange glow -->
+    <radialGradient id="orangeGlow" cx="70%" cy="40%">
+      <stop offset="0%" style="stop-color:#FFB88A;stop-opacity:0.08" />
+      <stop offset="50%" style="stop-color:#FFB88A;stop-opacity:0.04" />
+      <stop offset="100%" style="stop-color:#FFB88A;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Fine premium grain/noise texture -->
+    <filter id="grainTexture">
+      <feTurbulence baseFrequency="0.95" numOctaves="3" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="discrete" tableValues="0 0.008 0 0.008 0 0.006"/>
+      </feComponentTransfer>
+      <feComposite operator="over" in="SourceGraphic" in2="noise"/>
+    </filter>
+    
+    <!-- Very soft blur for orange glow -->
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+  </defs>
+  
+  <!-- Base light gradient background -->
+  <rect width="1920" height="1080" fill="url(#lightGradient)"/>
+  
+  <!-- Extremely gentle warm orange glow (minimal) -->
+  <ellipse cx="1344" cy="432" rx="400" ry="350" fill="url(#orangeGlow)" filter="url(#softGlow)"/>
+  
+  <!-- Fine premium grain texture overlay -->
+  <rect width="1920" height="1080" fill="url(#lightGradient)" opacity="0.4" filter="url(#grainTexture)"/>
+  
+  <!-- Subtle overlay for depth -->
+  <rect width="1920" height="1080" fill="url(#lightGradient)" opacity="0.1"/>
+</svg>
+
