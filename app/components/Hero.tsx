@@ -50,14 +50,14 @@ export default function Hero() {
           <div className="relative hidden md:block">
             <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80"
-                alt="Modern business services: construction, events, digital, consultancy, and F&B"
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=90"
+                alt="Premium multi-service hero: construction, events, digital services, consultancy, entertainment, and F&B"
                 fill
                 className="object-cover"
                 priority
               />
-              {/* Subtle overlay for text readability */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-slate-900/20"></div>
+              {/* Subtle overlay - left side clean for text, right side maintains visual weight */}
+              <div className="absolute inset-0 bg-gradient-to-r from-white/60 via-white/20 to-transparent"></div>
             </div>
           </div>
         </div>
