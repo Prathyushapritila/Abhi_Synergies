@@ -53,7 +53,8 @@ export default function Services() {
   return (
     <section 
       id="services" 
-      className="py-16 md:py-20 bg-transparent"
+      className="py-16 md:py-20"
+      style={{ backgroundColor: '#F3F4F6' }}
     >
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
