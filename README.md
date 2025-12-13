@@ -1,6 +1,6 @@
-# Abhi Elite Services - Marketing Website
+# Abhi Synergies - Marketing Website
 
-A complete, production-quality, fully responsive marketing website for Abhi Elite Services built with Next.js 14, TypeScript, and Tailwind CSS.
+A complete, production-quality, fully responsive marketing website for Abhi Synergies built with Next.js 14, TypeScript, and Tailwind CSS.
 
 ## Getting Started
 

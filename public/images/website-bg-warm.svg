@@ -1,0 +1,74 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Soft peach base -->
+    <linearGradient id="warmBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF1E6;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#FFF8F0;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#FFF5ED;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFF1E6;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Warm beige accent -->
+    <radialGradient id="warmBeige" cx="25%" cy="40%">
+      <stop offset="0%" style="stop-color:#F5E6D3;stop-opacity:0.15" />
+      <stop offset="60%" style="stop-color:#F5E6D3;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#F5E6D3;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Light cream accent -->
+    <radialGradient id="lightCream" cx="75%" cy="60%">
+      <stop offset="0%" style="stop-color:#FFFBF5;stop-opacity:0.12" />
+      <stop offset="60%" style="stop-color:#FFFBF5;stop-opacity:0.06" />
+      <stop offset="100%" style="stop-color:#FFFBF5;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Off-white accent -->
+    <radialGradient id="offWhite" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.1" />
+      <stop offset="70%" style="stop-color:#FFFFFF;stop-opacity:0.05" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Gentle fine-grain texture -->
+    <filter id="grainTexture">
+      <feTurbulence baseFrequency="0.9" numOctaves="2" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="discrete" tableValues="0 0.005 0 0.005 0 0.003"/>
+      </feComponentTransfer>
+      <feComposite operator="over" in="SourceGraphic" in2="noise"/>
+    </filter>
+    
+    <!-- Very soft blur for shapes -->
+    <filter id="softBlur">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+  </defs>
+  
+  <!-- Base warm background -->
+  <rect width="1920" height="1080" fill="url(#warmBase)"/>
+  
+  <!-- Extremely subtle abstract curves - smooth flowing shapes -->
+  <ellipse cx="480" cy="432" rx="450" ry="400" fill="url(#warmBeige)" filter="url(#softBlur)"/>
+  <ellipse cx="1440" cy="648" rx="420" ry="380" fill="url(#lightCream)" filter="url(#softBlur)"/>
+  <ellipse cx="960" cy="540" rx="500" ry="450" fill="url(#offWhite)" filter="url(#softBlur)"/>
+  
+  <!-- Smooth flowing curve shape -->
+  <path d="M 0 300 Q 400 250 800 300 Q 1200 350 1600 300 Q 1920 280 1920 300 L 1920 0 L 0 0 Z" 
+        fill="url(#warmBeige)" 
+        opacity="0.08"
+        filter="url(#softBlur)"/>
+  
+  <!-- Another smooth flowing curve -->
+  <path d="M 0 780 Q 500 830 1000 780 Q 1500 730 1920 780 L 1920 1080 L 0 1080 Z" 
+        fill="url(#lightCream)" 
+        opacity="0.06"
+        filter="url(#softBlur)"/>
+  
+  <!-- Gentle fine-grain texture overlay -->
+  <rect width="1920" height="1080" fill="url(#warmBase)" opacity="0.25" filter="url(#grainTexture)"/>
+  
+  <!-- Subtle overlay for depth -->
+  <rect width="1920" height="1080" fill="url(#warmBase)" opacity="0.1"/>
+</svg>
+
