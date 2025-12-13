@@ -1,0 +1,45 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Deep charcoal/near-black base -->
+    <linearGradient id="charcoalBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0B1120;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0F172A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0B1120;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Subtle darker accent -->
+    <radialGradient id="darkerAccent" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#020617;stop-opacity:0.3" />
+      <stop offset="70%" style="stop-color:#020617;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#020617;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Very subtle texture -->
+    <filter id="grainTexture">
+      <feTurbulence baseFrequency="0.95" numOctaves="3" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="discrete" tableValues="0 0.008 0 0.008 0 0.006"/>
+      </feComponentTransfer>
+      <feComposite operator="over" in="SourceGraphic" in2="noise"/>
+    </filter>
+    
+    <!-- Soft blur for gradient -->
+    <filter id="softBlur">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+  </defs>
+  
+  <!-- Base deep charcoal background -->
+  <rect width="1920" height="1080" fill="url(#charcoalBase)"/>
+  
+  <!-- Subtle darker accent gradient -->
+  <ellipse cx="960" cy="540" rx="800" ry="700" fill="url(#darkerAccent)" filter="url(#softBlur)"/>
+  
+  <!-- Very subtle texture overlay -->
+  <rect width="1920" height="1080" fill="url(#charcoalBase)" opacity="0.4" filter="url(#grainTexture)"/>
+  
+  <!-- Subtle overlay for depth -->
+  <rect width="1920" height="1080" fill="url(#charcoalBase)" opacity="0.2"/>
+</svg>
+

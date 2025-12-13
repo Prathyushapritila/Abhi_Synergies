@@ -38,7 +38,7 @@ export default function Work() {
       id="work" 
       className="py-16 md:py-20 relative"
       style={{
-        backgroundImage: 'url(/images/projects-bg-new.svg)',
+        backgroundImage: 'url(/images/projects-bg-warm.svg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

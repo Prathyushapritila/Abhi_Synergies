@@ -3,7 +3,15 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-200 py-10 md:py-14">
+    <footer 
+      className="text-slate-200 py-10 md:py-14 relative"
+      style={{
+        backgroundImage: 'url(/images/footer-bg-dark.svg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         {/* Top Section: Logo, Services, Address, and Social */}
         <div className="grid md:grid-cols-3 gap-8 mb-8 pb-8 border-b border-white/10">

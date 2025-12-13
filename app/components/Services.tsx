@@ -55,7 +55,7 @@ export default function Services() {
       id="services" 
       className="py-16 md:py-20 relative"
       style={{
-        backgroundImage: 'url(/images/services-bg-new.svg)',
+        backgroundImage: 'url(/images/services-bg-warm.svg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
