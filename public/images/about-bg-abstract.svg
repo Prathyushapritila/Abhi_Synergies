@@ -1,0 +1,61 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Soft peach base -->
+    <linearGradient id="peachBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF1E6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFF5ED;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFF1E6;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Soft sky blue accent -->
+    <radialGradient id="skyBlueAccent" cx="30%" cy="50%">
+      <stop offset="0%" style="stop-color:#EAF4FF;stop-opacity:0.3" />
+      <stop offset="70%" style="stop-color:#EAF4FF;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#EAF4FF;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Soft mint accent -->
+    <radialGradient id="mintAccent" cx="70%" cy="30%">
+      <stop offset="0%" style="stop-color:#E9FFF6;stop-opacity:0.25" />
+      <stop offset="70%" style="stop-color:#E9FFF6;stop-opacity:0.12" />
+      <stop offset="100%" style="stop-color:#E9FFF6;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Warm grey accent -->
+    <radialGradient id="warmGreyAccent" cx="50%" cy="70%">
+      <stop offset="0%" style="stop-color:#F5F5F5;stop-opacity:0.2" />
+      <stop offset="70%" style="stop-color:#F5F5F5;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#F5F5F5;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Gentle noise texture -->
+    <filter id="grainTexture">
+      <feTurbulence baseFrequency="0.85" numOctaves="2" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="discrete" tableValues="0 0.006 0 0.006"/>
+      </feComponentTransfer>
+      <feComposite operator="over" in="SourceGraphic" in2="noise"/>
+    </filter>
+    
+    <!-- Soft blur for shapes -->
+    <filter id="softBlur">
+      <feGaussianBlur stdDeviation="50"/>
+    </filter>
+  </defs>
+  
+  <!-- Base soft peach background -->
+  <rect width="1920" height="1080" fill="url(#peachBase)"/>
+  
+  <!-- Subtle abstract shapes - flowing curves -->
+  <ellipse cx="576" cy="540" rx="400" ry="350" fill="url(#skyBlueAccent)" filter="url(#softBlur)"/>
+  <ellipse cx="1344" cy="324" rx="380" ry="320" fill="url(#mintAccent)" filter="url(#softBlur)"/>
+  <ellipse cx="960" cy="756" rx="450" ry="400" fill="url(#warmGreyAccent)" filter="url(#softBlur)"/>
+  
+  <!-- Gentle noise texture overlay -->
+  <rect width="1920" height="1080" fill="url(#peachBase)" opacity="0.3" filter="url(#grainTexture)"/>
+  
+  <!-- Subtle overlay for depth -->
+  <rect width="1920" height="1080" fill="url(#peachBase)" opacity="0.15"/>
+</svg>
+

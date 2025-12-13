@@ -34,7 +34,7 @@ const projects: Project[] = [
 
 export default function Work() {
   return (
-    <section id="work" className="py-16 md:py-20 bg-transparent">
+    <section id="work" className="py-16 md:py-20" style={{ backgroundColor: '#F3F4F6' }}>
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         <SectionHeader
           label="PROJECTS"

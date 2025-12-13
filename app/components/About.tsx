@@ -11,8 +11,17 @@ export default function About() {
   ]
 
   return (
-    <section id="about" className="py-16 md:py-20 bg-white relative overflow-hidden">
-      <div className="max-w-6xl mx-auto px-4 md:px-6">
+    <section id="about" className="py-16 md:py-20 relative overflow-hidden" style={{ backgroundColor: '#FFF1E6' }}>
+      <div 
+        className="absolute inset-0 opacity-30"
+        style={{
+          backgroundImage: 'url(/images/about-bg-abstract.svg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      ></div>
+      <div className="max-w-6xl mx-auto px-4 md:px-6 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Side - Image */}
           <div className="relative">
