@@ -79,21 +79,12 @@ export default function Services() {
             {services.map((service) => (
               <div
                 key={service.id}
-                className="group flex gap-4 p-5 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-200 relative overflow-hidden min-h-[140px]"
-                style={{
-                  backgroundImage: `url(${service.backgroundImage})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat',
-                }}
+                className="group flex gap-4 p-5 rounded-2xl bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-200 relative overflow-hidden"
               >
-                {/* Dark gradient overlay for text readability */}
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-slate-800/60 to-slate-900/70 rounded-2xl"></div>
-                
                 {/* Content wrapper */}
                 <div className="relative z-10 flex gap-4 w-full">
                   {/* Image Thumbnail */}
-                  <div className="relative w-20 h-20 flex-shrink-0 rounded-xl overflow-hidden shadow-md ring-2 ring-white/20">
+                  <div className="relative w-20 h-20 flex-shrink-0 rounded-xl overflow-hidden shadow-md">
                     <Image
                       src={service.imageUrl}
                       alt={service.title}
@@ -104,10 +95,10 @@ export default function Services() {
                   
                   {/* Content */}
                   <div className="flex-1">
-                    <h3 className="font-serif text-lg font-semibold text-white mb-1.5 group-hover:text-[#EA6A1F] transition-colors">
+                    <h3 className="font-serif text-lg font-semibold text-ink mb-1.5 group-hover:text-[#EA6A1F] transition-colors">
                       {service.title}
                     </h3>
-                    <p className="text-sm text-slate-100 leading-relaxed">
+                    <p className="text-sm text-muted leading-relaxed">
                       {service.description}
                     </p>
                   </div>
