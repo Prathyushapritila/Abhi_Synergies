@@ -150,7 +150,7 @@ export default function Contact() {
               <div className="flex items-start gap-4">
                 <div className="relative w-24 h-24 flex-shrink-0">
                   <Image
-                    src="/Logo_ABHI.jpeg"
+                    src="/AbhiPng-5-mainLogo.png"
                     alt="Abhi Synergies"
                     fill
                     className="object-contain"
