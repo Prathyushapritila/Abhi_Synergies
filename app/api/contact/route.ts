@@ -51,35 +51,23 @@ ${message}
 This email was sent from the contact form on abhi-elite-services.vercel.app
     `.trim()
 
-    // Try to use Resend if available, otherwise use mailto fallback
-    try {
-      // Dynamic import to avoid errors if Resend is not installed
-      const { Resend } = await import('resend')
-      
-      if (process.env.RESEND_API_KEY) {
-        const resend = new Resend(process.env.RESEND_API_KEY)
-        
-        await resend.emails.send({
-          from: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev',
-          to: recipientEmail,
-          replyTo: email,
-          subject: subject,
-          html: emailBodyHtml,
-          text: emailBodyText,
-        })
-
-        return NextResponse.json(
-          { 
-            success: true, 
-            message: 'Your message has been sent successfully!' 
-          },
-          { status: 200 }
-        )
-      }
-    } catch (resendError) {
-      // Resend not configured, fall through to mailto approach
-      console.log('Resend not available, using mailto fallback')
-    }
+    // Email sending functionality
+    // To enable email sending, install Resend: npm install resend
+    // Then add RESEND_API_KEY and RESEND_FROM_EMAIL to your environment variables
+    // 
+    // Example Resend integration (uncomment when Resend is installed):
+    // if (process.env.RESEND_API_KEY) {
+    //   const { Resend } = await import('resend')
+    //   const resend = new Resend(process.env.RESEND_API_KEY)
+    //   await resend.emails.send({
+    //     from: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev',
+    //     to: recipientEmail,
+    //     replyTo: email,
+    //     subject: subject,
+    //     html: emailBodyHtml,
+    //     text: emailBodyText,
+    //   })
+    // }
 
     // Fallback: Use mailto link (requires user's email client)
     // This is a temporary solution until Resend is configured
