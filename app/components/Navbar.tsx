@@ -45,16 +45,16 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
       <nav className="max-w-6xl mx-auto px-4 md:px-6">
-        <div className="flex items-center justify-between h-20 md:h-24">
+        <div className="flex items-center justify-between h-20 md:h-28">
           {/* Logo Block */}
           <Link 
             href="#home" 
-            className="flex items-center"
+            className="flex items-center py-2"
             onClick={() => handleNavClick('home')}
             aria-label="Abhi Synergies Home"
           >
             {/* ABHI Logo Image */}
-            <div className="relative w-48 h-16 md:w-56 md:h-20 flex-shrink-0">
+            <div className="relative h-14 md:h-20 flex-shrink-0" style={{ width: 'auto', minWidth: '180px', maxWidth: '320px' }}>
               <Image
                 src="/AbhiPng-5-mainLogo.png"
                 alt="Abhi Synergies"

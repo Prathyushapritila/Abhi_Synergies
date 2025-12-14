@@ -148,7 +148,7 @@ export default function Contact() {
             {/* Founder Card */}
             <div className="bg-[#FFF8F0] border border-slate-200 rounded-2xl p-6 shadow-sm">
               <div className="flex items-start gap-4">
-                <div className="relative w-28 h-28 md:w-32 md:h-32 flex-shrink-0">
+                <div className="relative w-40 h-40 md:w-48 md:h-48 flex-shrink-0">
                   <Image
                     src="/AbhiPng-5-mainLogo.png"
                     alt="Abhi Synergies"

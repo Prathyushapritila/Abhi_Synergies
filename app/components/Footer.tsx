@@ -22,7 +22,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-4">
               {/* ABHI Logo Image */}
-              <div className="relative w-48 h-16 md:w-56 md:h-20 flex-shrink-0">
+              <div className="relative h-16 md:h-24 flex-shrink-0" style={{ width: 'auto', minWidth: '200px', maxWidth: '320px' }}>
                 <Image
                   src="/AbhiPng-5-mainLogo.png"
                   alt="Abhi Synergies"
