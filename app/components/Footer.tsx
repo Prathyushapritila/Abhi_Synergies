@@ -24,7 +24,7 @@ export default function Footer() {
               {/* ABHI Logo Image */}
               <div className="relative w-40 h-16 md:w-48 md:h-20 flex-shrink-0 bg-white/10 rounded-lg p-2">
                 <Image
-                  src="/AbhiPng-5-mainLogo.png"
+                  src="/Logo_ABHI.jpeg"
                   alt="Abhi Synergies"
                   fill
                   className="object-contain"
