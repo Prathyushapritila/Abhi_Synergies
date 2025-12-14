@@ -129,7 +129,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-16 md:py-20">
+    <section id="contact" className="py-16 md:py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         <SectionHeader
           label="CONTACT"
@@ -146,7 +146,7 @@ export default function Contact() {
           {/* Left Column - Founder & Contact Card */}
           <div className="space-y-6">
             {/* Founder Card */}
-            <div className="p-6">
+            <div className="bg-[#FFF8F0] border border-slate-200 rounded-2xl p-6 shadow-sm">
               <div className="flex items-start gap-4">
                 <Logo variant="contact" />
                 <div className="flex-1">
@@ -165,7 +165,7 @@ export default function Contact() {
             </div>
 
             {/* Address Card */}
-            <div className="p-6">
+            <div className="bg-[#FFF8F0] border border-slate-200 rounded-2xl p-6 shadow-sm">
               <h4 className="font-semibold text-ink mb-4">Address</h4>
               <div className="text-sm text-muted leading-relaxed space-y-1">
                 <p>Block: AG8</p>
@@ -196,7 +196,7 @@ export default function Contact() {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className={`w-full px-4 py-3 bg-white border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#EA6A1F] transition-all ${
+                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#EA6A1F] transition-all ${
                       errors.name ? 'border-red-500' : 'border-slate-300'
                     }`}
                   />
@@ -213,7 +213,7 @@ export default function Contact() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className={`w-full px-4 py-3 bg-white border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#EA6A1F] transition-all ${
+                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#EA6A1F] transition-all ${
                       errors.email ? 'border-red-500' : 'border-slate-300'
                     }`}
                   />
@@ -230,7 +230,7 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className={`w-full px-4 py-3 bg-white border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#EA6A1F] transition-all ${
+                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#EA6A1F] transition-all ${
                       errors.phone ? 'border-red-500' : 'border-slate-300'
                     }`}
                   />
@@ -270,7 +270,7 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     rows={5}
-                    className={`w-full px-4 py-3 bg-white border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#EA6A1F] transition-all ${
+                    className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#EA6A1F] transition-all ${
                       errors.message ? 'border-red-500' : 'border-slate-300'
                     }`}
                   ></textarea>
