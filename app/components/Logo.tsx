@@ -11,9 +11,9 @@ export default function Logo({ variant = 'header', className = '' }: LogoProps) 
   // footer: 48-64px
   // contact: 80-120px
   const sizeClasses = {
-    header: 'h-12 md:h-16 lg:h-[72px] w-auto max-w-none',
-    footer: 'h-14 md:h-16 w-auto max-w-none',
-    contact: 'h-20 md:h-24 lg:h-28 w-auto max-w-none',
+    header: 'h-10 sm:h-12 md:h-14 lg:h-[72px] w-auto max-w-none',
+    footer: 'h-12 md:h-16 w-auto max-w-none',
+    contact: 'h-20 md:h-24 lg:h-[120px] w-auto max-w-none',
   }
 
   return (
