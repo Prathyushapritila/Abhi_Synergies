@@ -146,9 +146,11 @@ export default function Contact() {
           {/* Left Column - Founder & Contact Card */}
           <div className="space-y-6">
             {/* Founder Card */}
-            <div className="bg-[#FFF8F0] border border-slate-200 rounded-2xl p-6 shadow-sm">
+            <div className="p-6">
               <div className="flex items-start gap-4">
-                <Logo variant="contact" />
+                <div className="flex-shrink-0">
+                  <Logo variant="contact" />
+                </div>
                 <div className="flex-1">
                   <div className="text-xs uppercase tracking-wide text-muted mb-1">Founder</div>
                   <h3 className="font-serif text-xl font-semibold text-ink mb-2">Srikanth Pritila</h3>
