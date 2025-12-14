@@ -44,7 +44,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
       <nav className="max-w-6xl mx-auto px-4 md:px-6">
-        <div className="flex items-center justify-between min-h-[96px] md:min-h-[120px]">
+        <div className="min-h-[96px] md:min-h-[120px] flex items-center justify-between">
           {/* Logo Block */}
           <Link 
             href="#home" 
@@ -56,6 +56,7 @@ export default function Navbar() {
               src="/AbhiPng-12.png"
               alt="Abhi Synergies"
               className="h-16 md:h-20 w-auto object-contain flex-shrink-0"
+              style={{ display: 'block', maxWidth: 'none' }}
             />
           </Link>
 
