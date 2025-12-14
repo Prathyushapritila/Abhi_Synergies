@@ -148,13 +148,13 @@ export default function Contact() {
             {/* Founder Card */}
             <div className="bg-[#FFF8F0] border border-slate-200 rounded-2xl p-6 shadow-sm">
               <div className="flex items-start gap-4">
-                <div className="relative w-24 h-24 flex-shrink-0">
+                <div className="relative w-28 h-28 md:w-32 md:h-32 flex-shrink-0">
                   <Image
-                    src="/Logo_ABHI.jpeg"
+                    src="/AbhiPng-5-mainLogo.png"
                     alt="Abhi Synergies"
                     fill
                     className="object-contain"
-                    style={{ objectFit: 'contain' }}
+                    style={{ objectFit: 'contain', filter: 'none', opacity: 1 }}
                   />
                 </div>
                 <div className="flex-1">
