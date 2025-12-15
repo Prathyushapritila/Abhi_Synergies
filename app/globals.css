@@ -28,22 +28,11 @@
     @apply font-serif;
   }
 
-  /* Ensure logo images have transparent backgrounds - aggressive removal */
+  /* Ensure logo images have transparent backgrounds */
   img[src*="AbhiPng-12"], 
   img[src*="abhi-logo"],
-  img[alt*="Abhi Synergies"],
-  img[src*="AbhiPng-12"] *,
-  [class*="logo"] img {
+  img[alt*="Abhi Synergies"] {
     background: transparent !important;
-    background-color: transparent !important;
-    background-image: none !important;
-  }
-
-  /* Remove backgrounds from Next.js Image wrapper divs */
-  div:has(img[src*="AbhiPng-12"]),
-  div:has(img[alt*="Abhi Synergies"]) {
-    background: transparent !important;
-    background-color: transparent !important;
   }
 }
 
