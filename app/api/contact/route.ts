@@ -48,7 +48,7 @@ Message:
 ${message}
 
 ---
-This email was sent from the contact form on abhi-elite-services.vercel.app
+This email was sent from the contact form on abhi-synergies.vercel.app
     `.trim()
 
     // Email sending functionality
