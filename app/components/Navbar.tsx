@@ -56,7 +56,12 @@ export default function Navbar() {
               src="/AbhiPng-12.png"
               alt="Abhi Synergies"
               className="h-16 md:h-20 w-auto object-contain flex-shrink-0"
-              style={{ display: 'block', maxWidth: 'none', background: 'transparent' }}
+              style={{ 
+                display: 'block', 
+                maxWidth: 'none', 
+                background: 'transparent',
+                backgroundColor: 'transparent',
+              }}
             />
           </Link>
 

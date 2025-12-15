@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 interface LogoProps {
   variant?: 'header' | 'footer' | 'contact'
   className?: string
@@ -18,14 +16,17 @@ export default function Logo({ variant = 'header', className = '' }: LogoProps) 
 
   return (
     <div className={`relative flex-shrink-0 ${className}`} style={{ overflow: 'visible', background: 'transparent' }}>
-      <Image
+      <img
         src="/AbhiPng-12.png"
         alt="Abhi Synergies"
-        width={variant === 'contact' ? 300 : variant === 'footer' ? 280 : 320}
-        height={variant === 'contact' ? 120 : variant === 'footer' ? 72 : 80}
         className={sizeClasses[variant]}
-        style={{ filter: 'none', opacity: 1, background: 'transparent' }}
-        priority={variant === 'header'}
+        style={{ 
+          display: 'block',
+          background: 'transparent',
+          backgroundColor: 'transparent',
+          filter: 'none',
+          opacity: 1,
+        }}
       />
     </div>
   )
