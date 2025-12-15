@@ -22,7 +22,7 @@ const services: Service[] = [
   {
     id: 'consultancy',
     title: 'Consultancy Services',
-    description: 'We assist with project planning, approvals, budgeting and vendor coordination. Our team also supports complete recruitment needs, covering both IT roles and non-IT hiring such as local vendors, technicians and on-site staff.',
+    description: 'We assist with project planning, approvals, budgeting and vendor coordination. We also handle recruitment for both IT and non-IT needs, including local vendors and on-site staff.',
     imageUrl: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80',
     backgroundImage: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&q=80', // Business consulting meeting
   },

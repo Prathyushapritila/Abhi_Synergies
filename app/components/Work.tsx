@@ -11,7 +11,7 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'From plain ground to construction to housewarming',
+    title: 'From plain ground to housewarming',
     description: 'End-to-end support covering construction coordination, interiors, housewarming planning and complete food setup.',
     imageUrl: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80',
   },
@@ -22,7 +22,7 @@ const projects: Project[] = [
   },
   {
     title: 'Restaurant launch with branding and music',
-    description: 'We manage restaurant launches from initial setup and interiors to staffing, branding and grand opening events, ensuring everything is planned, coordinated and executed seamlessly.',
+    description: 'Support for restaurant setup, staffing, branding and launch events.',
     imageUrl: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80',
   },
   {

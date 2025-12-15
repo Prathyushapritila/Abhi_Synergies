@@ -19,6 +19,9 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Side - Content */}
           <div className="space-y-6 animate-fade-in">
+            <div className="inline-flex items-center bg-[#EA6A1F]/10 text-[#EA6A1F] uppercase text-[11px] tracking-[0.25em] px-3 py-1 rounded-full">
+              Multi-service team
+            </div>
             {/* Main heading */}
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-ink leading-tight tracking-tight">
               All your construction, event and F&B needs in one place.
