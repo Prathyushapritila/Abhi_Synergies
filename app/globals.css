@@ -58,6 +58,11 @@
     }
   }
 
+  /* Custom font utility for DN Condensed (falls back to existing serif heading font) */
+  .font-dn-condensed {
+    font-family: 'DN Condensed', var(--font-serif);
+  }
+
   /* Watermark responsive sizing */
   .watermark-bg {
     background-size: 75%;
