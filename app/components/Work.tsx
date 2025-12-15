@@ -36,7 +36,7 @@ export default function Work() {
   return (
     <section 
       id="work" 
-      className="py-16 md:py-20 relative"
+      className="py-14 md:py-16 relative"
       style={{
         backgroundImage: 'url(/images/projects-bg-warm.svg)',
         backgroundSize: 'cover',

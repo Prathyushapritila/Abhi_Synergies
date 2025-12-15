@@ -11,7 +11,7 @@ export default function About() {
   ]
 
   return (
-    <section id="about" className="py-16 md:py-20 relative overflow-hidden" style={{ backgroundColor: 'rgba(255, 241, 230, 0.85)' }}>
+    <section id="about" className="py-14 md:py-16 relative overflow-hidden" style={{ backgroundColor: 'rgba(255, 241, 230, 0.85)' }}>
       <div 
         className="absolute inset-0 opacity-30"
         style={{
@@ -22,7 +22,7 @@ export default function About() {
         }}
       ></div>
       <div className="max-w-6xl mx-auto px-4 md:px-6 relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-10 lg:gap-12 items-center">
           {/* Left Side - Image */}
           <div className="relative">
             <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">

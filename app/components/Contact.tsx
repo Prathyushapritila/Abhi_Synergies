@@ -129,7 +129,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-16 md:py-20 bg-white/85">
+    <section id="contact" className="py-14 md:py-16 bg-white/85">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         <SectionHeader
           label="CONTACT"
@@ -142,7 +142,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid md:grid-cols-2 gap-10 lg:gap-12">
           {/* Left Column - Founder & Contact Card */}
           <div className="space-y-6">
             {/* Founder Card */}

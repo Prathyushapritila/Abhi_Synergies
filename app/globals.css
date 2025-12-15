@@ -65,9 +65,7 @@
 
   /* Tighter spacing for Copperplate hero tagline */
   .hero-tagline-tight {
-    letter-spacing: 0.02em;
     word-spacing: 0;
-    line-height: 1.1;
   }
 
   /* Watermark responsive sizing */

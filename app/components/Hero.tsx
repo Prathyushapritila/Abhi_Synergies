@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="relative py-16 md:py-20 overflow-hidden"
+      className="relative py-14 md:py-16 overflow-hidden"
     >
       <div className="max-w-6xl mx-auto px-4 md:px-6 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -23,7 +23,7 @@ export default function Hero() {
               Multi-service team
             </div>
             {/* Main heading */}
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-ink leading-tight">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-ink leading-tight tracking-tight">
               <span className="text-blue-900 font-copperplate-gothic hero-tagline-tight">
                 All your construction, event and F&B needs in one place.
               </span>

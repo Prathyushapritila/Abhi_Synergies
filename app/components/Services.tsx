@@ -60,11 +60,11 @@ export default function Services() {
   return (
     <section 
       id="services" 
-      className="py-16 md:py-20 bg-white/85"
+      className="py-14 md:py-16 bg-white/85"
     >
       {/* Content layer */}
       <div className="max-w-6xl mx-auto px-4 md:px-6">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-start">
           {/* Left Column - Intro Text */}
           <div>
             <SectionHeader
