@@ -24,7 +24,7 @@ export default function Hero() {
             </div>
             {/* Main heading */}
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-ink leading-tight tracking-tight">
-              <span className="sectionAccent inline-block">All your construction, event and F&B needs in one place.</span>
+              All your construction, event and F&B needs in one place.
             </h1>
             
             {/* Subheading */}

@@ -68,9 +68,4 @@
       background-size: 55%;
     }
   }
-
-  /* Shared accent for highlighted section titles */
-  .sectionAccent {
-    @apply bg-indigo-50 text-indigo-700 px-2 py-1 rounded-md;
-  }
 }
