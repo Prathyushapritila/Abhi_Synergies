@@ -42,7 +42,7 @@ export default function Navbar() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
+    <header className="sticky top-0 z-50 bg-white/95 border-b border-slate-200 shadow-sm">
       <nav className="max-w-6xl mx-auto px-4 md:px-6">
         <div className="min-h-[96px] md:min-h-[120px] flex items-center justify-between">
           {/* Logo Block */}

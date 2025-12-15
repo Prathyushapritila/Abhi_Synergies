@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <body className="relative font-sans antialiased text-ink">
         <WatermarkLayer />
-        <div className="relative z-0">
+        <div className="relative z-10">
           {children}
         </div>
       </body>
