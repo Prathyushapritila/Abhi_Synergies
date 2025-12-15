@@ -23,7 +23,7 @@ export default function Hero() {
               Multi-service team
             </div>
             {/* Main heading */}
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-ink leading-tight">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-ink leading-tight">
               <span className="text-blue-900 font-copperplate-gothic hero-tagline-tight">
                 All your construction, event and F&B needs in one place.
               </span>
