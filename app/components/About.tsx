@@ -11,7 +11,7 @@ export default function About() {
   ]
 
   return (
-    <section id="about" className="py-16 md:py-20 relative overflow-hidden" style={{ backgroundColor: 'rgba(255, 241, 230, 0.9)' }}>
+    <section id="about" className="py-16 md:py-20 relative overflow-hidden" style={{ backgroundColor: 'rgba(255, 241, 230, 0.85)' }}>
       <div 
         className="absolute inset-0 opacity-30"
         style={{

@@ -29,7 +29,7 @@ const sectors: Sector[] = [
 
 export default function Sectors() {
   return (
-    <section id="who-we-help" className="py-16 md:py-20 bg-white/90">
+    <section id="who-we-help" className="py-16 md:py-20 bg-white/85">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         <SectionHeader
           label="WHO WE HELP"

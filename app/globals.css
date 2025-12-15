@@ -50,4 +50,15 @@
       transform: translateY(0);
     }
   }
+
+  /* Watermark responsive sizing */
+  .watermark-bg {
+    background-size: 75%;
+  }
+
+  @media (min-width: 768px) {
+    .watermark-bg {
+      background-size: 55%;
+    }
+  }
 }

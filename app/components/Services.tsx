@@ -60,7 +60,7 @@ export default function Services() {
   return (
     <section 
       id="services" 
-      className="py-16 md:py-20 bg-white/90"
+      className="py-16 md:py-20 bg-white/85"
     >
       {/* Content layer */}
       <div className="max-w-6xl mx-auto px-4 md:px-6">
