@@ -31,7 +31,7 @@ export async function POST(request: NextRequest) {
           <p style="white-space: pre-wrap;">${message}</p>
         </div>
         <p style="color: #666; font-size: 12px; margin-top: 20px;">
-          This email was sent from the contact form on abhi-elite-services.vercel.app
+          This email was sent from the contact form on abhi-synergies.vercel.app
         </p>
       </div>
     `
