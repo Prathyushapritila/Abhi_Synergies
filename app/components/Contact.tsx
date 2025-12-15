@@ -150,16 +150,16 @@ export default function Contact() {
               <Logo variant="contact" />
               <div className="flex items-start gap-4 mt-4">
                 <div className="flex-1">
-                  <div className="text-xs uppercase tracking-wide text-muted mb-1">Founder</div>
-                  <h3 className="font-serif text-xl font-semibold text-ink mb-2">Srikanth Pritila</h3>
-                  <div className="text-sm text-muted">
-                    <a 
-                      href="tel:+919666155296" 
-                      className="block hover:text-[#EA6A1F] transition-colors"
-                    >
-                      Contact: Srikanth - +91 96661 55296
-                    </a>
-                  </div>
+          <div className="text-xs uppercase tracking-wide text-muted mb-1 underline decoration-1">Founder</div>
+          <h3 className="font-serif text-xl font-semibold text-ink mb-2">Srikanth Pritila</h3>
+          <div className="text-sm text-muted">
+            <a 
+              href="tel:+919666155296" 
+              className="block hover:text-[#EA6A1F] transition-colors"
+            >
+              Contact: +91 96661 55296
+            </a>
+          </div>
                 </div>
               </div>
             </div>
@@ -168,11 +168,10 @@ export default function Contact() {
             <div className="bg-[#FFF8F0] border border-slate-200 rounded-2xl p-6 shadow-sm">
               <h4 className="font-semibold text-ink mb-4">Address</h4>
               <div className="text-sm text-muted leading-relaxed space-y-1">
-                <p>Block: AG8</p>
-                <p>Mathrus Apartment</p>
-                <p>Opp: Zudio showroom Hyderguda-Basheerbagh Road</p>
-                <p>Hyderguda</p>
-                <p>Hyderabad, Telangana 500029</p>
+                <p>Matrusree Apartments</p>
+                <p>Opposite: Zudio showroom</p>
+                <p>Hyderguda, Basheerbagh</p>
+                <p>Telangana 500029</p>
               </div>
             </div>
           </div>

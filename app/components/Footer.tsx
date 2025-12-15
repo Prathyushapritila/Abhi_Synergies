@@ -22,7 +22,7 @@ export default function Footer() {
           <div>
             <Logo variant="footer" />
             <p className="text-sm text-slate-300 mt-4">
-              Construction · Consultancy · Digital · Events · Entertainments · F&B
+              Construction · Consultancy · Digital Services · Events · Entertainments · F&B
             </p>
           </div>
 
@@ -30,11 +30,10 @@ export default function Footer() {
           <div>
             <p className="font-semibold mb-3 text-sm text-white">Address</p>
             <div className="text-sm text-slate-300 leading-relaxed space-y-1">
-              <p>Block: AG8</p>
-              <p>Mathrus Apartment</p>
-              <p>Opp: Zudio showroom Hyderguda-Basheerbagh Road</p>
-              <p>Hyderguda</p>
-              <p>Hyderabad, Telangana 500029</p>
+              <p>Matrusree Apartments</p>
+              <p>Opposite: Zudio showroom</p>
+              <p>Hyderguda, Basheerbagh</p>
+              <p>Telangana 500029</p>
             </div>
           </div>
 

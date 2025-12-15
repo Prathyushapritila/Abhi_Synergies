@@ -15,14 +15,14 @@ const services: Service[] = [
   {
     id: 'constructions',
     title: 'Constructions & Innovations',
-    description: 'We support you with building, interiors and basic setup for homes, apartments, offices and shops.',
+    description: 'We support you with constructions and interiors and basic setup for homes, apartments, offices and shops.',
     imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80',
     backgroundImage: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=80', // Modern building construction site
   },
   {
     id: 'consultancy',
     title: 'Consultancy Services',
-    description: 'We help you plan the project, understand approvals, estimate costs and select the right vendors.',
+    description: 'We assist with project planning, approvals, budgeting and vendor coordination. Our team also supports complete recruitment needs, covering both IT roles and non-IT hiring such as local vendors, technicians and on-site staff.',
     imageUrl: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80',
     backgroundImage: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&q=80', // Business consulting meeting
   },

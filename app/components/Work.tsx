@@ -11,8 +11,8 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'Apartment launch with housewarming function',
-    description: 'Site readiness, ribbon-cutting event, guest flow and buffet, all handled as one connected plan.',
+    title: 'From plain ground to construction to housewarming',
+    description: 'End-to-end support covering construction coordination, interiors, housewarming planning and complete food setup.',
     imageUrl: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80',
   },
   {
@@ -22,7 +22,7 @@ const projects: Project[] = [
   },
   {
     title: 'Restaurant launch with branding and music',
-    description: 'Planning, vendor coordination and phased setup to help a growing team move in smoothly.',
+    description: 'We manage restaurant launches from initial setup and interiors to staffing, branding and grand opening events, ensuring everything is planned, coordinated and executed seamlessly.',
     imageUrl: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80',
   },
   {
@@ -48,7 +48,7 @@ export default function Work() {
         <SectionHeader
           label="PROJECTS"
           title="Examples of how we combine services"
-          description="These are sample ways we mix construction, events, digital and F&B together. Your plan can be similar or fully different — we listen first and then suggest."
+          description="These are sample ways we mix construction, events, digital services and F&B together. Your plan can be similar or fully different — we listen first and then suggest."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">

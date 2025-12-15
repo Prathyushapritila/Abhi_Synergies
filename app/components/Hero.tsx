@@ -26,7 +26,7 @@ export default function Hero() {
             
             {/* Subheading */}
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              Abhi Synergies is a Hyderabad-based team that helps with buildings, office setups, events, entertainment and food. Instead of coordinating many different vendors, you speak to one team that plans and manages everything from start to finish.
+              Abhi Synergies is a Hyderabad-based team that helps with constructions and interiors, from office setup to recruitment, event planning, entertainment and food. Instead of coordinating multiple vendors, clients work with one team that plans and manages everything from start to finish.
             </p>
             
             {/* Buttons */}

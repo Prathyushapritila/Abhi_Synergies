@@ -56,9 +56,9 @@ export default function About() {
             {/* Benefits list */}
             <div className="space-y-4">
               {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-start">
+                <div key={index} className="flex items-start bg-white/70 rounded-lg p-3 shadow-sm">
                   <span className="text-[#EA6A1F] mr-3 text-xl mt-1">✓</span>
-                  <span className="text-ink font-medium">{benefit}</span>
+                  <span className="text-[#EA6A1F] font-semibold">{benefit}</span>
                 </div>
               ))}
             </div>

@@ -12,12 +12,12 @@ interface Sector {
 const sectors: Sector[] = [
   {
     title: 'Homes & Apartments',
-    description: 'Families building or renovating flats or independent homes, who also need help with interiors or a small housewarming function.',
+    description: 'Individuals and families undertaking new construction or renovation of flats and independent houses, with additional support for interiors and housewarming arrangements.',
     imageUrl: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80',
   },
   {
     title: 'Businesses & Offices',
-    description: 'Owners setting up offices, clinics, showrooms or small businesses who need space setup, branding and sometimes a launch event.',
+    description: 'Owners setting up offices, clinics, showrooms or small businesses who need space, staff, setup and branding with the option of launch events.',
     imageUrl: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=600&q=80',
   },
   {

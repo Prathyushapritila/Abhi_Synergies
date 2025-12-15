@@ -19,7 +19,7 @@ const projects: Project[] = [
     gradient: 'from-purple-400 to-purple-600',
   },
   {
-    category: 'Digital',
+    category: 'Digital Services',
     title: 'E-commerce Platform',
     description: 'Full-stack web development with custom branding, payment integration, and digital marketing strategy.',
     gradient: 'from-green-400 to-green-600',

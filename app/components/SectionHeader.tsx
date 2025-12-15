@@ -7,7 +7,7 @@ interface SectionHeaderProps {
 export default function SectionHeader({ label, title, description }: SectionHeaderProps) {
   return (
     <div className="mb-12 lg:mb-16 max-w-2xl">
-      <div className="text-xs tracking-[0.25em] text-slate-500 uppercase mb-2">
+      <div className="text-xs tracking-[0.25em] text-[#EA6A1F] uppercase mb-2">
         {label}
       </div>
       <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-semibold text-ink mb-4 leading-tight">
