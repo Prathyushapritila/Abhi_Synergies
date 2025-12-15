@@ -57,13 +57,13 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8 lg:space-x-10">
+          <div className="hidden md:flex items-center flex-nowrap whitespace-nowrap gap-4 md:gap-6 lg:gap-8 ml-auto">
             {navLinks.map((link) => (
               <Link
                 key={link.id}
                 href={link.href}
                 onClick={() => handleNavClick(link.id)}
-                className={`relative text-sm md:text-base text-slate-800 font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 rounded px-2 py-1 ${
+                className={`relative whitespace-nowrap text-sm md:text-base text-slate-800 font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 rounded px-2 py-1 ${
                   activeSection === link.id
                     ? 'text-[#EA6A1F]'
                     : 'hover:text-[#EA6A1F]'
