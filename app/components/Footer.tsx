@@ -17,7 +17,7 @@ export default function Footer() {
       
       <div className="max-w-6xl mx-auto px-4 md:px-6 relative z-10">
         {/* Top Section: Logo, Services, Address, and Social */}
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-12 mb-8 pb-8 border-b border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 lg:gap-12 mb-8 pb-8 border-b border-white/10">
           {/* Left: Logo and Services */}
           <div className="flex flex-col">
             <Logo variant="footer" />
@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
 
           {/* Middle: Address */}
-          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <div className="flex flex-col">
             <p className="font-bold mb-3 text-sm text-white underline">Address:</p>
             <div className="text-sm text-slate-300 leading-relaxed space-y-1">
               <p>Matrusree Apartments</p>
@@ -38,7 +38,7 @@ export default function Footer() {
           </div>
 
           {/* Right: Social Icons */}
-          <div className="flex flex-col items-center md:items-end">
+          <div className="flex flex-col">
             <p className="font-semibold mb-3 text-sm text-white">Connect with us</p>
             <div className="flex gap-4">
               <a
