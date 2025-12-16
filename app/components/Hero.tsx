@@ -25,13 +25,15 @@ export default function Hero() {
             {/* Main heading */}
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-ink leading-tight tracking-tight">
               <span className="text-slate-300 font-sans">
-                ALL YOUR CONSTRUCTION, EVENT AND F&B NEEDS IN ONE PLACE.
+                One Partner. One Vision. One Team.
+                <br />
+                Complete Execution.
               </span>
             </h1>
             
             {/* Subheading */}
             <p className="text-base md:text-lg text-muted leading-relaxed">
-              Abhi Synergies is a Hyderabad-based team that helps with constructions and interiors, from office setup to recruitment, event planning, entertainment and food. Instead of coordinating multiple vendors, clients work with one team that plans and manages everything from start to finish.
+              Abhi Synergies is a Hyderabad-based integrated services company delivering construction, interiors, events, staffing, entertainment, and F&amp;B solutions, seamlessly managed under one roof.
             </p>
             
             {/* Buttons */}
