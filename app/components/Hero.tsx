@@ -4,6 +4,7 @@ import Image from 'next/image'
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {
+    if (typeof window === 'undefined') return
     const element = document.getElementById(sectionId)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -54,14 +55,15 @@ export default function Hero() {
           </div>
 
           {/* Right Side - Image */}
-          <div className="relative hidden md:block">
-            <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-xl">
+          <div className="relative w-full mt-8 md:mt-0">
+            <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-xl bg-slate-100">
               <Image
                 src="/hero-image.jpeg"
                 alt="Premium multi-service hero: construction, events, digital services, consultancy, entertainment, and F&B"
                 fill
                 className="object-cover object-center"
                 priority
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
               {/* Subtle overlay - left side clean for text, right side maintains visual weight */}
               <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-white/30 to-transparent"></div>
