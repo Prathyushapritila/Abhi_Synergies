@@ -42,7 +42,7 @@ export default function Footer() {
             <p className="font-semibold mb-3 text-sm text-white">Connect with us</p>
             <div className="flex gap-4">
               <a
-                href="https://instagram.com/abhisynergies"
+                href="https://www.instagram.com/abhi_synergies?igsh=MWVrMWQzZm8wZmZ2aA=="
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Follow us on Instagram"

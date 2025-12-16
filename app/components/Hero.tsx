@@ -42,13 +42,13 @@ export default function Hero() {
                 onClick={() => scrollToSection('services')}
                 className="px-8 py-4 bg-[#EA6A1F] text-white font-semibold rounded-lg shadow-md hover:bg-[#EA6A1F]/90 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-[#EA6A1F] focus:ring-offset-2"
               >
-                View our services
+                Explore Our Solutions
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
                 className="px-8 py-4 bg-transparent border border-[#EA580C] text-[#EA580C] font-semibold rounded-lg hover:bg-[#EA580C] hover:text-white transition-all duration-200 hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-[#EA580C] focus:ring-offset-2"
               >
-                Talk to us
+                Get a Free Quote
               </button>
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function Hero() {
           <div className="relative hidden md:block">
             <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/Hero_Image.jpeg"
+                src="/hero-image.jpeg"
                 alt="Premium multi-service hero: construction, events, digital services, consultancy, entertainment, and F&B"
                 fill
                 className="object-cover object-center"
