@@ -23,8 +23,8 @@ export default function Hero() {
               Multi-service team
             </div>
             {/* Main heading */}
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-ink leading-tight tracking-tight">
-              <span className="text-slate-300 font-sans">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-semibold text-ink leading-tight tracking-tight">
+              <span className="text-blue-900">
                 One Partner. One Vision. One Team.
                 <br />
                 Complete Execution.
