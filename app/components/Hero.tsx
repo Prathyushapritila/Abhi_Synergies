@@ -55,16 +55,17 @@ export default function Hero() {
 
           {/* Right Side - Image */}
           <div className="relative hidden md:block">
-            <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-xl bg-slate-100">
               <Image
                 src="/Hero_Image.jpeg"
                 alt="Premium multi-service hero: construction, events, digital services, consultancy, entertainment, and F&B"
                 fill
                 className="object-cover object-center"
                 priority
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
               {/* Subtle overlay - left side clean for text, right side maintains visual weight */}
-              <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-white/30 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-white/50 via-white/20 to-transparent"></div>
             </div>
           </div>
         </div>
