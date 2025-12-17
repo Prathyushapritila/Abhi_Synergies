@@ -40,7 +40,7 @@ export default function Footer() {
           {/* Right: Social Icons */}
           <div className="flex flex-col">
             <p className="font-semibold mb-3 text-sm text-white">Connect with us</p>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
               {/* Facebook - Blue Icon */}
               <a
                 href="https://www.facebook.com/profile.php?id=61585132328537"
@@ -104,10 +104,10 @@ export default function Footer() {
 
         {/* Bottom Section: Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-          <p className="text-slate-300">
+          <p className="text-slate-300 text-center md:text-left">
             © <span className="brand-font">Abhi Synergies</span>. Rise Together. All rights reserved.
           </p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-4 md:gap-6 justify-center md:justify-end">
             <Link
               href="#"
               className="text-slate-300 hover:text-[#EA6A1F] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#EA6A1F] focus:ring-offset-2 focus:ring-offset-slate-900 rounded px-2 py-1"
