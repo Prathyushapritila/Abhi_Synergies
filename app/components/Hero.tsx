@@ -16,10 +16,10 @@ export default function Hero() {
       id="home" 
       className="relative py-14 md:py-16 overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto px-4 md:px-6 relative z-10 w-full">
-        <div className="grid grid-cols-1 md:grid-cols-[55%_45%] lg:grid-cols-[55%_45%] gap-8 lg:gap-12 items-center">
+      <div className="max-w-6xl mx-auto px-4 md:px-6 relative z-10">
+        <div className="grid md:grid-cols-[55%_45%] lg:grid-cols-[55%_45%] gap-8 lg:gap-12 items-center">
           {/* Left Side - Content (wider column) */}
-          <div className="space-y-6 animate-fade-in relative z-20 w-full">
+          <div className="space-y-6 animate-fade-in relative z-20">
             <div className="inline-flex items-center bg-[#EA6A1F]/10 text-[#EA6A1F] uppercase text-[11px] tracking-[0.25em] px-3 py-1 rounded-full">
               Multi-service team
             </div>
@@ -28,8 +28,8 @@ export default function Hero() {
               <span className="text-blue-900 block">
                 {/* Line 1: One Partner. One Vision. */}
                 <span className="block">One Partner. One Vision.</span>
-                {/* Line 2: One Team. Complete Execution. - Must stay on one line on desktop only */}
-                <span className="block md:whitespace-nowrap">One Team. Complete Execution.</span>
+                {/* Line 2: One Team. Complete Execution. - Must stay on one line */}
+                <span className="block whitespace-nowrap">One Team. Complete Execution.</span>
               </span>
             </h1>
             
@@ -39,16 +39,16 @@ export default function Hero() {
             </p>
             
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-2 w-full">
+            <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <button
                 onClick={() => scrollToSection('services')}
-                className="w-full sm:w-auto px-6 sm:px-8 py-4 bg-[#EA6A1F] text-white font-semibold rounded-lg shadow-md hover:bg-[#EA6A1F]/90 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-[#EA6A1F] focus:ring-offset-2 text-sm sm:text-base"
+                className="px-8 py-4 bg-[#EA6A1F] text-white font-semibold rounded-lg shadow-md hover:bg-[#EA6A1F]/90 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-[#EA6A1F] focus:ring-offset-2"
               >
                 Explore Our Solutions
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="w-full sm:w-auto px-6 sm:px-8 py-4 bg-transparent border border-[#EA580C] text-[#EA580C] font-semibold rounded-lg hover:bg-[#EA580C] hover:text-white transition-all duration-200 hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-[#EA580C] focus:ring-offset-2 text-sm sm:text-base"
+                className="px-8 py-4 bg-transparent border border-[#EA580C] text-[#EA580C] font-semibold rounded-lg hover:bg-[#EA580C] hover:text-white transition-all duration-200 hover:-translate-y-1 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-[#EA580C] focus:ring-offset-2"
               >
                 Get a Free Quote
               </button>
@@ -56,8 +56,8 @@ export default function Hero() {
           </div>
 
           {/* Right Side - Image (larger column) */}
-          <div className="relative w-full mt-8 md:mt-0 z-10 max-w-full">
-            <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-xl bg-slate-100 max-w-full">
+          <div className="relative w-full mt-8 md:mt-0 z-10">
+            <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-xl bg-slate-100">
               <Image
                 src="/hero-image.jpeg"
                 alt="Premium multi-service hero: construction, events, digital services, consultancy, entertainment, and F&B"
@@ -67,7 +67,7 @@ export default function Hero() {
                   filter: 'brightness(1.2) contrast(1.2) saturate(1.3)',
                 }}
                 priority
-                sizes="(max-width: 768px) 100vw, 45vw"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>

@@ -43,13 +43,13 @@ export default function Navbar() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 bg-white/85 border-b border-slate-200 shadow-sm w-full overflow-hidden">
-      <nav className="max-w-6xl mx-auto px-4 md:px-6 w-full">
-        <div className="min-h-[96px] md:min-h-[120px] flex items-center justify-between w-full">
+    <header className="sticky top-0 z-50 bg-white/85 border-b border-slate-200 shadow-sm">
+      <nav className="max-w-6xl mx-auto px-4 md:px-6">
+        <div className="min-h-[96px] md:min-h-[120px] flex items-center justify-between">
           {/* Logo Block */}
           <Link 
             href="#home" 
-            className="flex items-center pr-4 sm:pr-8 md:pr-12 flex-shrink-0 max-w-[60%] sm:max-w-none"
+            className="flex items-center pr-8 md:pr-12"
             onClick={() => handleNavClick('home')}
             aria-label="Abhi Synergies Home"
           >
@@ -104,14 +104,14 @@ export default function Navbar() {
 
         {/* Mobile Navigation Menu */}
         {isOpen && (
-          <div className="md:hidden pb-6 border-t border-slate-200 mt-2 w-full overflow-hidden">
-            <div className="flex flex-col space-y-2 pt-4 w-full">
+          <div className="md:hidden pb-6 border-t border-slate-200 mt-2">
+            <div className="flex flex-col space-y-2 pt-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.id}
                   href={link.href}
                   onClick={() => handleNavClick(link.id)}
-                  className={`px-4 py-3 rounded-md text-base font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 w-full ${
+                  className={`px-4 py-3 rounded-md text-base font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 ${
                     activeSection === link.id
                       ? 'text-[#EA6A1F] bg-[#EA6A1F]/10'
                       : 'text-slate-800 hover:text-[#EA6A1F] hover:bg-slate-50'

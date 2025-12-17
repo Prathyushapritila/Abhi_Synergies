@@ -5,19 +5,10 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    width: 100%;
-    overflow-x: hidden;
-    box-sizing: border-box;
-  }
-  
-  *, *::before, *::after {
-    box-sizing: border-box;
   }
   
   body {
     @apply text-ink;
-    width: 100%;
-    overflow-x: hidden;
     background-image: url('/images/website-bg-warm.svg');
     background-size: cover;
     background-position: center top;
