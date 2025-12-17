@@ -163,7 +163,7 @@ export default function Contact() {
               href="mailto:abhisynergies@gmail.com" 
               className="block hover:text-[#EA6A1F] transition-colors"
             >
-              abhisynergies@gmail.com
+              Mail ID: abhisynergies@gmail.com
             </a>
           </div>
                 </div>
