@@ -64,6 +64,13 @@
     }
   }
 
+  /* Brand font - matches Abhi Synergies brand text styling */
+  .brand-font {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+
   /* Custom font utility for Copperplate Gothic (falls back to existing serif heading font) */
   .font-copperplate-gothic {
     font-family: 'Copperplate Gothic', 'Copperplate', var(--font-serif);
