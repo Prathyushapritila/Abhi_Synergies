@@ -105,7 +105,7 @@ export default function Footer() {
         {/* Bottom Section: Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
           <p className="text-slate-300">
-            © <span className="brand-font">Abhi Synergies</span>. Rise Together. All rights reserved.
+            © <span className="brand-font">Abhi Synergies</span>. <span className="text-white font-semibold">Rise Together</span>. All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link
