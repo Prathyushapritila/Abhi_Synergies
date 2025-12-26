@@ -6,14 +6,9 @@ export default function Footer() {
     <footer 
       className="text-slate-200 py-10 md:py-14 relative"
       style={{
-        backgroundImage: 'url(/images/footer-section-bg.svg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
+        backgroundColor: 'rgb(30 58 138)',
       }}
     >
-      {/* Darker overlay for contrast */}
-      <div className="absolute inset-0 bg-black/20"></div>
       
       <div className="max-w-6xl mx-auto px-4 md:px-6 relative z-10">
         {/* Top Section: Logo, Services, Address, and Social */}
