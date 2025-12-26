@@ -16,7 +16,7 @@ export default function Logo({ variant = 'header', className = '' }: LogoProps) 
         aria-label="Abhi Synergies - Integrated Services Company"
       >
         <Image
-          src="/AbhiPng_GoldText-14 (1).png"
+          src="/abhi-synergies-logo.png"
           alt="Abhi Synergies - Integrated Services Company providing construction, consultancy, digital services, events, entertainment, and F&B solutions"
           width={320}
           height={80}
@@ -46,7 +46,7 @@ export default function Logo({ variant = 'header', className = '' }: LogoProps) 
         aria-label="Abhi Synergies Logo"
       >
         <Image
-          src="/AbhiPng_GoldText-14 (1).png"
+          src="/abhi-synergies-logo.png"
           alt="Abhi Synergies - Integrated Services Company"
           width={520}
           height={130}
@@ -73,7 +73,7 @@ export default function Logo({ variant = 'header', className = '' }: LogoProps) 
         aria-label="Abhi Synergies Logo"
       >
         <Image
-          src="/AbhiPng_GoldText-14 (1).png"
+          src="/abhi-synergies-logo.png"
           alt="Abhi Synergies - Integrated Services Company"
           width={360}
           height={90}
