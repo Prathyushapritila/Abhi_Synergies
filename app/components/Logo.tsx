@@ -79,7 +79,7 @@ export default function Logo({ variant = 'header', className = '' }: LogoProps) 
           height={90}
           className="w-full h-auto object-contain min-h-[50px]"
           style={{ 
-            filter: 'brightness(1.2) contrast(1.3) saturate(1.1) drop-shadow(0 0 2px rgba(255, 255, 255, 0.3))', 
+            filter: 'none', 
             opacity: 1, 
             background: 'transparent',
             maxWidth: '100%',
