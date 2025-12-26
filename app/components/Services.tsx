@@ -72,7 +72,7 @@ export default function Services() {
             <span className="text-blue-900">Services from Abhi Synergies</span>
           </h2>
           <p className="text-base md:text-lg text-muted leading-relaxed max-w-2xl">
-            These are the main services we provide. You can choose just one, or combine many based on your need.
+            These are the main services we provide. You can choose just one, or combine multiple services based on your need.
           </p>
         </div>
 
@@ -97,7 +97,7 @@ export default function Services() {
                 
                 {/* Content */}
                 <div className="flex-1">
-                  <h3 className="font-serif text-lg font-semibold text-ink mb-1.5 group-hover:text-[#EA6A1F] transition-colors">
+                  <h3 className="font-serif text-lg font-semibold text-blue-900 mb-1.5 group-hover:text-[#EA6A1F] transition-colors">
                     {service.title}
                   </h3>
                   <p className="text-sm text-muted leading-relaxed">

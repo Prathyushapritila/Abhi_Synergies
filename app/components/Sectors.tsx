@@ -17,7 +17,7 @@ const sectors: Sector[] = [
   },
   {
     title: 'Businesses & Offices',
-    description: 'Owners setting up offices, clinics, showrooms or small businesses who need space, staff, setup and branding with the option of launch events.',
+    description: 'Owners setting up offices, clinics, showrooms or businesses who need space, staff, setup and branding with the option of launch events.',
     imageUrl: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=600&q=80',
   },
   {
@@ -55,7 +55,7 @@ export default function Sectors() {
               
               {/* Content */}
               <div className="p-6">
-                <h3 className="font-serif text-xl md:text-2xl font-bold text-ink mb-3 group-hover:text-[#EA6A1F] transition-colors">
+                <h3 className="font-serif text-xl md:text-2xl font-bold text-blue-900 mb-3 group-hover:text-[#EA6A1F] transition-colors">
                   {sector.title}
                 </h3>
                 <p className="text-muted leading-relaxed">

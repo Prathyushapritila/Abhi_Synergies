@@ -172,7 +172,7 @@ export default function Contact() {
 
             {/* Address Card */}
             <div className="bg-[#FFF8F0] border border-slate-200 rounded-2xl p-6 shadow-sm">
-              <h4 className="font-bold text-ink mb-4 underline">Address:</h4>
+              <h4 className="font-bold text-blue-900 mb-4 underline">Address:</h4>
               <div className="text-sm text-muted leading-relaxed space-y-1 mb-4">
                 <p>Matrusree Apartments</p>
                 <p>Opposite: Zudio Showroom</p>
@@ -206,7 +206,7 @@ export default function Contact() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-semibold text-ink mb-2">
+                  <label htmlFor="name" className="block text-sm font-semibold text-blue-900 mb-2">
                     Name <span className="text-[#EA6A1F]">*</span>
                   </label>
                   <input
@@ -223,7 +223,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-ink mb-2">
+                  <label htmlFor="email" className="block text-sm font-semibold text-blue-900 mb-2">
                     Email <span className="text-[#EA6A1F]">*</span>
                   </label>
                   <input
@@ -240,7 +240,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-semibold text-ink mb-2">
+                  <label htmlFor="phone" className="block text-sm font-semibold text-blue-900 mb-2">
                     Phone Number <span className="text-[#EA6A1F]">*</span>
                   </label>
                   <input
@@ -257,7 +257,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-ink mb-3">
+                  <label className="block text-sm font-semibold text-blue-900 mb-3">
                     Service(s) needed <span className="text-[#EA6A1F]">*</span>
                   </label>
                   <div className="space-y-2">
@@ -280,7 +280,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-semibold text-ink mb-2">
+                  <label htmlFor="message" className="block text-sm font-semibold text-blue-900 mb-2">
                     Message <span className="text-[#EA6A1F]">*</span>
                   </label>
                   <textarea

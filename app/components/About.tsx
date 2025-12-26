@@ -46,13 +46,13 @@ export default function About() {
             
             <div className="space-y-5 text-muted leading-relaxed mb-8">
               <p>
-                Often, projects become stressful not because the work itself is difficult, but because coordinating multiple vendors for construction, decoration, food, music, and other services can be overwhelming.
+                Often during a project it can get stressful when you have to deal with multiple vendors for decoration, food, music and as such but with Abhi Synergies all you have to do is contact us and we'll make it a simple task for you.
               </p>
               <p>
-                Abhi Synergies was started to simplify this process. With us, you work with one team and one point of contact. We bring multiple services under one roof so planning becomes easier, communication is clearer, and follow-ups are more efficient.
+                We bring multiple services under one team so that planning is easier, follow-up is simple and you always know who to call if something changes.
               </p>
               <p>
-                You always know who to call, and we take responsibility for coordinating everything behind the scenes. Our vision is to make project planning efficient, reliable, and stress-free.
+                So to sum it up our vision is to make planning a project efficient and reliable.
               </p>
             </div>
 

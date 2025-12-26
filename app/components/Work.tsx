@@ -17,7 +17,7 @@ const projects: Project[] = [
   },
   {
     title: 'Office setup with small opening event',
-    description: 'Interior finishing, soft opening, launch event and digital announcement posts coordinated together.',
+    description: 'Interior finishing, recruiting, soft opening, launch event and digital announcement posts coordinated together.',
     imageUrl: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80',
   },
   {
