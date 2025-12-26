@@ -9,6 +9,8 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState('home')
 
   useEffect(() => {
+    if (typeof window === 'undefined') return
+
     const handleScroll = () => {
       const sections = ['home', 'services', 'who-we-help', 'about', 'work', 'contact']
       const scrollPosition = window.scrollY + 100
@@ -26,7 +28,11 @@ export default function Navbar() {
     }
 
     window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('scroll', handleScroll)
+      }
+    }
   }, [])
 
   const handleNavClick = (section: string) => {
