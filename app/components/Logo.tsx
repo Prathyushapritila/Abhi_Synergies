@@ -16,11 +16,11 @@ export default function Logo({ variant = 'header', className = '' }: LogoProps) 
         aria-label="Abhi Synergies - Integrated Services Company"
       >
         <Image
-          src="/logo.png"
+          src="/abhi-synergies-logo.png"
           alt="Abhi Synergies - Integrated Services Company providing construction, consultancy, digital services, events, entertainment, and F&B solutions"
           width={320}
           height={80}
-          className="h-16 md:h-20 w-auto object-contain flex-shrink-0 min-h-[44px] min-w-[120px] max-w-[280px] sm:max-w-[320px]"
+          className="h-16 md:h-20 w-auto object-contain flex-shrink-0 min-h-[44px] min-w-[120px]"
           style={{ 
             filter: 'none', 
             opacity: 1, 
