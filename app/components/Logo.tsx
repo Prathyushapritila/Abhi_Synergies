@@ -11,7 +11,7 @@ export default function Logo({ variant = 'header', className = '' }: LogoProps) 
     return (
       <div className={`relative ${className}`} style={{ overflow: 'visible', background: 'transparent' }}>
         <Image
-          src="/AbhiPng-13.png"
+          src="/AbhiPng_GoldText-14 (1).png"
           alt="Abhi Synergies"
           width={320}
           height={80}
@@ -34,7 +34,7 @@ export default function Logo({ variant = 'header', className = '' }: LogoProps) 
     return (
       <div className={`w-full max-w-[520px] mx-auto mb-4 ${className}`} style={{ background: 'transparent' }}>
         <Image
-          src="/AbhiPng-13.png"
+          src="/AbhiPng_GoldText-14 (1).png"
           alt="Abhi Synergies"
           width={520}
           height={130}
@@ -55,7 +55,7 @@ export default function Logo({ variant = 'header', className = '' }: LogoProps) 
     return (
       <div className={`w-full max-w-[360px] mx-auto md:mx-0 ${className}`} style={{ background: 'transparent' }}>
         <Image
-          src="/AbhiPng-13.png"
+          src="/AbhiPng_GoldText-14 (1).png"
           alt="Abhi Synergies"
           width={360}
           height={90}
